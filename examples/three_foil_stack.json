@@ -1,0 +1,37 @@
+{
+  "description": "Three interacting foils; numerical demonstration of three-body viscous coupling, not a high-lift benchmark.",
+  "reference_chord": 1.0,
+  "reynolds": 1000000.0,
+  "mach": 0.0,
+  "ncrit": 9.0,
+  "alpha_deg": [
+    0,
+    2,
+    4
+  ],
+  "elements": [
+    {
+      "name": "lower",
+      "naca": "0012",
+      "panels": 100,
+      "translation": [
+        0,
+        -0.7
+      ]
+    },
+    {
+      "name": "middle",
+      "naca": "0012",
+      "panels": 100
+    },
+    {
+      "name": "upper",
+      "naca": "0012",
+      "panels": 100,
+      "translation": [
+        0,
+        0.7
+      ]
+    }
+  ]
+}

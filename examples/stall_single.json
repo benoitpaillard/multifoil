@@ -1,0 +1,31 @@
+{
+  "description": "Coupled viscous polar for detecting a sampled lift peak; refine alpha/panels before interpreting stall.",
+  "reference_chord": 1.0,
+  "moment_reference": [
+    0.25,
+    0.0
+  ],
+  "alpha_deg": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+  ],
+  "reynolds": 1000000,
+  "mach": 0.0,
+  "ncrit": 9,
+  "elements": [
+    {
+      "name": "main",
+      "naca": "0012",
+      "panels": 200
+    }
+  ]
+}

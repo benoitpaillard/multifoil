@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "reference_kind": "experiment",
+  "source": "https://ntrs.nasa.gov/citations/19930091739",
+  "geometry_audited": false,
+  "conditions_audited": false,
+  "bounds_audited": false,
+  "geometry_audit": "Coordinate tables and slot diagrams recovered; a complete assembled coordinate set and flap placement audit have not been completed.",
+  "conditions_audit": "Physical Re2.19e6 recovered; transition unknown; hinge-fitting drag not measured for deflected configurations.",
+  "bounds_audit": "Published repeatability limits transcribed, but digitization, geometry reconstruction, fixed-CL mapping and configuration-dependent fitting bounds remain unquantified.",
+  "target_cl": 1.0,
+  "cl_tolerance": 2e-05,
+  "geometries": [],
+  "candidate": "NACA23012 slotted flap2 with slot2-h and/or2-i, selected moderate-lift fixed configurations. Target CL1 is a proposed starting value, not an extracted matched point.",
+  "blockers": [
+    "Recover and inspect complete main-element cove, flap contour, placement and reference chord for at least two fixed configurations.",
+    "Extract original fixed-configuration observations with pixel-to-axis calibration and digitization bounds; do not substitute an envelope polar.",
+    "Document transition assumptions and unresolved fitting bias; bound the differences or limit interpretation.",
+    "Execute fixed-lift model comparisons and sensitivity studies before filling model rows."
+  ],
+  "executed_model_solves": 0,
+  "extracted_fixed_lift_observations": 0
+}

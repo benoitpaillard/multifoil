@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "deflection_deg": -2,
+      "minimum_clearance_c": 0.01931428206762738,
+      "te_rotation_residual_c": 1.939551112843579e-06,
+      "max_drag_vs_lift_marker_CL_difference": 3.744156383689301e-05
+    },
+    {
+      "deflection_deg": 0,
+      "minimum_clearance_c": 0.01931328393363738,
+      "te_rotation_residual_c": 0.0,
+      "max_drag_vs_lift_marker_CL_difference": 6.869272470733101e-05
+    },
+    {
+      "deflection_deg": 5,
+      "minimum_clearance_c": 0.019315265078375072,
+      "te_rotation_residual_c": 4.332513136821432e-06,
+      "max_drag_vs_lift_marker_CL_difference": 7.34418225942779e-05
+    },
+    {
+      "deflection_deg": 10,
+      "minimum_clearance_c": 0.01931645661539233,
+      "te_rotation_residual_c": 1.2672063803121132e-05,
+      "max_drag_vs_lift_marker_CL_difference": 0.00010254570275525232
+    }
+  ],
+  "reported_thickness_ratio": 0.1291,
+  "max_vertical_linear_interpolated_fore_thickness": 0.1294314026815557,
+  "thickness_qualification": "This plotted vertical thickness is not used to rescale the geometry; original author coordinates are still needed for exact matching.",
+  "reference_roundtrip": {
+    "files_compared": 32,
+    "all_byte_identical": true
+  },
+  "source_pdf_sha256": "01b8bb6fc9b4fb2bc3246611106d64f980c03c41b18dcd1740a59a769e66cf03"
+}

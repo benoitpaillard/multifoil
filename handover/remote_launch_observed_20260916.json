@@ -1,0 +1,55 @@
+{
+  "observed_utc": "2026-09-16T12:40:00.208798+00:00",
+  "launcher": {
+    "launcher_pid": 14949,
+    "hostname": "jony4",
+    "started_utc": "2026-09-16T12:38:07.998969+00:00",
+    "workers": 8,
+    "root": "/home/jony/multifoil-runs/s702-repeatability-20260916",
+    "bootstrap_attempt": 2,
+    "python_requested": "3.12.13"
+  },
+  "launch_status": {
+    "phase": "running_study",
+    "exit_code": 0,
+    "launcher_pid": 14949,
+    "hostname": "jony4",
+    "updated_utc": "2026-09-16T12:38:38.922778+00:00"
+  },
+  "study_status": {
+    "state": "running",
+    "updated_utc": "2026-09-16T12:39:45.657510+00:00",
+    "completed_jobs": 1,
+    "total_jobs": 11,
+    "last_completed_job": "cold_d5_cl0p5",
+    "last_job_success": true
+  },
+  "numerical_runtime": {
+    "python": "3.12.13",
+    "hostname": "jony4",
+    "versions": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    },
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "active_processes": [
+    "15703   14949 Sl    0.6 111968 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15704   15703 R    99.7 120700 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15705   15703 R    99.7 206968 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15706   15703 R    99.7 247460 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15707   15703 R    99.7 272064 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15708   15703 R    99.7 275452 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15709   15703 R    99.7 209408 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15710   15703 R    99.7 183480 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+    "15711   15703 R    99.7 171824 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8"
+  ],
+  "completed_target_files": 2,
+  "progress_files": 6
+}

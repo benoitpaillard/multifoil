@@ -1,0 +1,15 @@
+test_distributed_reference_hashes (test_validation.ValidationIntegrity.test_distributed_reference_hashes) ... ok
+test_drag_only_reference_has_no_lift_peak (test_validation.ValidationIntegrity.test_drag_only_reference_has_no_lift_peak) ... ok
+test_failed_solve_and_blank_experimental_drag (test_validation.ValidationIntegrity.test_failed_solve_and_blank_experimental_drag) ... ok
+test_microphone_observable_uses_reattachment (test_validation.ValidationIntegrity.test_microphone_observable_uses_reattachment) ... ok
+test_mses_drag_extraction_reproduces_bundled_reference (test_validation.ValidationIntegrity.test_mses_drag_extraction_reproduces_bundled_reference) ... ok
+test_mses_extraction_reproduces_bundled_reference (test_validation.ValidationIntegrity.test_mses_extraction_reproduces_bundled_reference) ... ok
+test_mses_is_classified_as_solver_reference (test_validation.ValidationIntegrity.test_mses_is_classified_as_solver_reference) ... ok
+test_no_alpha_interpolation_or_extrapolation (test_validation.ValidationIntegrity.test_no_alpha_interpolation_or_extrapolation) ... ok
+test_stall_needs_reference_neighbors_and_convergence (test_validation.ValidationIntegrity.test_stall_needs_reference_neighbors_and_convergence) ... ok
+test_transition_ranges_and_missing_transition (test_validation.ValidationIntegrity.test_transition_ranges_and_missing_transition) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.039s
+
+OK

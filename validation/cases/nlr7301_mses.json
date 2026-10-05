@@ -1,0 +1,50 @@
+{
+  "description": "Published MSES code-to-code comparison: NLR7301 2.6% gap, ICAS2006 paper512 Figure6 p6. Re2.51e6 M0.185. CL only. Ncrit9 assumed; original Ncrit, trips, mesh, exact coordinates and convergence settings not disclosed. Nominal ECARP geometry; no fit.",
+  "reference_chord": 1.0,
+  "reynolds": 2510000,
+  "mach": 0.185,
+  "ncrit": 9,
+  "iterations": 100,
+  "start_alpha": 0,
+  "alpha_deg": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    13,
+    14,
+    15
+  ],
+  "elements": [
+    {
+      "name": "main",
+      "file": "../data/nlr7301/NLR7301MainECARP.dat",
+      "panels": 260
+    },
+    {
+      "name": "flap",
+      "file": "../data/nlr7301/NLR7301FlapECARP.dat",
+      "panels": 180
+    }
+  ],
+  "benchmark": {
+    "reference_kind": "published_solver",
+    "reference_label": "Published MSES",
+    "reference_solver": "MSES",
+    "source_url": "https://www.icas.org/icas_archive/ICAS2006/PAPERS/512.PDF",
+    "source_figure": "Figure 6, printed/PDF page 6",
+    "scope": "CL(alpha), sampled lift peak; no MSES CD/CM/Cp/transition reference scored",
+    "notes": [
+      "Comparison to digitized published MSES results; MSES has not been run here.",
+      "Shared nominal Re, Mach and configuration; exact input-deck reproduction is not possible from the paper.",
+      "MSES version, Ncrit, trips, mesh, geometry file and residual tolerance are not specified. The cited 2.92 manual does not establish the executable version.",
+      "Ncrit9 and nominal ECARP coordinates are explicit MultiFoil assumptions; no settings fitted to match MSES.",
+      "CL reading allowance +/-0.015; incidence reading allowance +/-0.10 degree. These are digitization allowances, not MSES uncertainty.",
+      "Agreement with MSES is not independent experimental validation."
+    ],
+    "context_data": "../nlr7301/polar.csv"
+  }
+}

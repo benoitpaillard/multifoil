@@ -1,0 +1,1567 @@
+{
+  "backend": "viscous",
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "case": {
+    "description": "Coupled viscous polar for detecting a sampled lift peak; refine alpha/panels before interpreting stall.",
+    "reference_chord": 1.0,
+    "moment_reference": [
+      0.25,
+      0.0
+    ],
+    "alpha_deg": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20
+    ],
+    "reynolds": 1000000,
+    "mach": 0.0,
+    "ncrit": 9,
+    "elements": [
+      {
+        "name": "main",
+        "naca": "0012",
+        "panels": 200
+      }
+    ],
+    "iterations": 80,
+    "tolerance": 1e-07,
+    "wake_length": 1.0,
+    "minimum_te_gap": 1e-05,
+    "continuation_step": 1.0,
+    "min_step": 0.25
+  },
+  "coordinate_units": "x/reference_chord, y/reference_chord",
+  "diagnostics": [
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 11,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 0.23588142163897619,
+          "coupling_residual_max": 1.7092923070603274
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 0.23141378778997282,
+          "coupling_residual_max": 0.7308405652627525
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.2864607478740018,
+          "coupling_residual_max": 0.5123728534100547
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.28401332842534893,
+          "coupling_residual_max": 0.36258474578552946
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.45866379321817774,
+          "coupling_residual_max": 0.1426626442432668
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 0.2877287931990167,
+          "coupling_residual_max": 0.04985703333141123
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 0.0897715793848887,
+          "coupling_residual_max": 0.008134229153162198
+        },
+        {
+          "iteration": 7,
+          "bl_residual_l2": 0.042263288004585765,
+          "coupling_residual_max": 0.005412255257633114
+        },
+        {
+          "iteration": 8,
+          "bl_residual_l2": 0.002203307594175948,
+          "coupling_residual_max": 8.629632884415983e-05
+        },
+        {
+          "iteration": 9,
+          "bl_residual_l2": 3.295666483521259e-05,
+          "coupling_residual_max": 3.0632580928502406e-06
+        },
+        {
+          "iteration": 10,
+          "bl_residual_l2": 2.6995997137984053e-09,
+          "coupling_residual_max": 5.88426862790925e-10
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 3.5071289940005954,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": {
+              "s_over_cref": 0.7048096774784774,
+              "xy_over_cref": [
+                0.6873139676941983,
+                -0.037578704343755154
+              ],
+              "x_over_local_chord": 0.6873139676941983
+            },
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.00022173144383691782,
+            "max_Hk": 3.25450866446218
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.7048096774810275,
+              "xy_over_cref": [
+                0.687313967696306,
+                0.03757870434355124
+              ],
+              "x_over_local_chord": 0.687313967696306
+            },
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 3.9841644648930604e-13,
+            "max_Hk": 3.2545086644795362
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 5.995668177507464e-14,
+          "CM": -1.071084264906011e-14,
+          "CD_wake": 0.005320769525279276,
+          "CD_friction": 0.004216286897507481
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 0.0,
+          "converged": true,
+          "CL": 5.995668177507464e-14
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 14,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 0.4388252185773636,
+          "coupling_residual_max": 0.0007766075613439005
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 0.37229345461465196,
+          "coupling_residual_max": 0.0020162752126861028
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.2587558296749715,
+          "coupling_residual_max": 0.001476248014290471
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.21101430058452122,
+          "coupling_residual_max": 0.0038128233723920824
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.13772143276281795,
+          "coupling_residual_max": 0.0012442644639760747
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 0.13617471520008745,
+          "coupling_residual_max": 0.0005844465654933906
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 0.18187905304004867,
+          "coupling_residual_max": 0.00031641957790562447
+        },
+        {
+          "iteration": 7,
+          "bl_residual_l2": 0.27749036956143863,
+          "coupling_residual_max": 0.04488010955113819
+        },
+        {
+          "iteration": 8,
+          "bl_residual_l2": 0.2073623467082172,
+          "coupling_residual_max": 0.020096647939621404
+        },
+        {
+          "iteration": 9,
+          "bl_residual_l2": 0.08738978116388768,
+          "coupling_residual_max": 0.014419655089243366
+        },
+        {
+          "iteration": 10,
+          "bl_residual_l2": 0.029133503685196228,
+          "coupling_residual_max": 0.00017227499261163182
+        },
+        {
+          "iteration": 11,
+          "bl_residual_l2": 0.0069008518758329725,
+          "coupling_residual_max": 6.261316486014246e-05
+        },
+        {
+          "iteration": 12,
+          "bl_residual_l2": 0.0001478667521073568,
+          "coupling_residual_max": 2.236953903833605e-06
+        },
+        {
+          "iteration": 13,
+          "bl_residual_l2": 4.909502172502876e-08,
+          "coupling_residual_max": 1.8734103157669324e-09
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 7.657317617000444,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": {
+              "s_over_cref": 0.8759463072504097,
+              "xy_over_cref": [
+                0.8626564769829888,
+                -0.018328126377291337
+              ],
+              "x_over_local_chord": 0.8626564769829888
+            },
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.00010285249133698917,
+            "max_Hk": 3.4526998696799245
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.502770087201318,
+              "xy_over_cref": [
+                0.4806776139436975,
+                0.05404672381613436
+              ],
+              "x_over_local_chord": 0.4806776139436975
+            },
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.0003326467652101368,
+            "max_Hk": 3.201869408758215
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 0.19938483033362764,
+          "CM": 0.0063915359679343935,
+          "CD_wake": 0.005704660370698877,
+          "CD_friction": 0.004319228804648549
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 1.0,
+          "converged": true,
+          "CL": 0.09855784078554032
+        },
+        {
+          "alpha_deg": 2.0,
+          "converged": true,
+          "CL": 0.19938483033362764
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 12,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 0.6932093846488866,
+          "coupling_residual_max": 0.0008823158037936651
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 0.5567324308742633,
+          "coupling_residual_max": 0.0111651855747259
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.33654328855276094,
+          "coupling_residual_max": 0.0051678070567744705
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 1.5978358659183358,
+          "coupling_residual_max": 0.0019817785219785056
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 3.276728506263064,
+          "coupling_residual_max": 0.02583037232658547
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 3.170452090068793,
+          "coupling_residual_max": 0.02331602107316677
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 0.4456144590028332,
+          "coupling_residual_max": 0.0034698548479020763
+        },
+        {
+          "iteration": 7,
+          "bl_residual_l2": 0.20725096874618545,
+          "coupling_residual_max": 0.0010105436503586307
+        },
+        {
+          "iteration": 8,
+          "bl_residual_l2": 0.5616623043115437,
+          "coupling_residual_max": 0.0008133058709970387
+        },
+        {
+          "iteration": 9,
+          "bl_residual_l2": 0.059188335639353114,
+          "coupling_residual_max": 2.3954802300663047e-05
+        },
+        {
+          "iteration": 10,
+          "bl_residual_l2": 0.0004157025698126587,
+          "coupling_residual_max": 8.861374922730647e-08
+        },
+        {
+          "iteration": 11,
+          "bl_residual_l2": 8.677412660063822e-09,
+          "coupling_residual_max": 4.0034642267983145e-13
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 6.594902685999841,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": {
+              "s_over_cref": 0.9665851129008487,
+              "xy_over_cref": [
+                0.958459176422415,
+                -0.005879758323477704
+              ],
+              "x_over_local_chord": 0.958459176422415
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.8991422490001623,
+                  "xy_over_cref": [
+                    0.8915987610425724,
+                    -0.014721577935924319
+                  ],
+                  "x_over_local_chord": 0.8915987610425724
+                },
+                "end": {
+                  "s_over_cref": 0.9760543274430938,
+                  "xy_over_cref": [
+                    0.9678387992751147,
+                    -0.004580297730349162
+                  ],
+                  "x_over_local_chord": 0.9678387992751147
+                },
+                "reaches_trailing_edge": false
+              }
+            ],
+            "separated_arclength_fraction": 0.07643614514293899,
+            "min_cf": -7.785967462128802e-05,
+            "max_Hk": 4.4098294491364625
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.28697678088982825,
+              "xy_over_cref": [
+                0.25904116509369535,
+                0.0596031341193766
+              ],
+              "x_over_local_chord": 0.25904116509369535
+            },
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.00022616901561388542,
+            "max_Hk": 3.1630490587362887
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 0.4162178774398135,
+          "CM": 0.008602357888614288,
+          "CD_wake": 0.007218919604575849,
+          "CD_friction": 0.004915300447096436
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 3.0,
+          "converged": true,
+          "CL": 0.3044041084241179
+        },
+        {
+          "alpha_deg": 4.0,
+          "converged": true,
+          "CL": 0.4162178774398135
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 8,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 1.0629769093129986,
+          "coupling_residual_max": 0.0014506662547953963
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 0.8638604410875125,
+          "coupling_residual_max": 0.007374975895063071
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.5449958377449036,
+          "coupling_residual_max": 0.0039035305972836692
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.34073836145488906,
+          "coupling_residual_max": 0.0017242391905288035
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.05233690103872934,
+          "coupling_residual_max": 0.0015202110477781916
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 0.002007048450637476,
+          "coupling_residual_max": 1.0203431773159188e-05
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 1.602466454415342e-05,
+          "coupling_residual_max": 4.578357976070535e-08
+        },
+        {
+          "iteration": 7,
+          "bl_residual_l2": 1.7885032406092637e-08,
+          "coupling_residual_max": 4.8204495950443516e-12
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 6.09052283499841,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": {
+              "s_over_cref": 0.9875105065664443,
+              "xy_over_cref": [
+                0.986817784981162,
+                -0.0019029621779731805
+              ],
+              "x_over_local_chord": 0.986817784981162
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.8926337779427109,
+                  "xy_over_cref": [
+                    0.8927915530872693,
+                    -0.014570969930946233
+                  ],
+                  "x_over_local_chord": 0.8927915530872693
+                },
+                "end": {
+                  "s_over_cref": 1.0008286584246218,
+                  "xy_over_cref": [
+                    0.9999999999999999,
+                    -4.999999999999994e-06
+                  ],
+                  "x_over_local_chord": 0.9999999999999999
+                },
+                "reaches_trailing_edge": true
+              }
+            ],
+            "separated_arclength_fraction": 0.10822044000954162,
+            "min_cf": -0.00018795445905523124,
+            "max_Hk": 7.172992868994699
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.11998136735119881,
+              "xy_over_cref": [
+                0.08523183248633358,
+                0.044115536659404986
+              ],
+              "x_over_local_chord": 0.08523183248633358
+            },
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 3.670430025444035e-05,
+            "max_Hk": 3.800963520673356
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 0.6750907478647676,
+          "CM": 0.0002905022769820199,
+          "CD_wake": 0.009679935990851454,
+          "CD_friction": 0.005720074715881789
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 5.0,
+          "converged": true,
+          "CL": 0.540050689655211
+        },
+        {
+          "alpha_deg": 6.0,
+          "converged": true,
+          "CL": 0.6750907478647676
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 8,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 1.5459600549576828,
+          "coupling_residual_max": 0.0024265128241707096
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 1.2154576579861864,
+          "coupling_residual_max": 0.016298683910396655
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.573686182137088,
+          "coupling_residual_max": 0.00886580002982977
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.16121469727503848,
+          "coupling_residual_max": 0.002408493044910087
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.019752253876117464,
+          "coupling_residual_max": 0.0006949329300147689
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 0.0007087478134937396,
+          "coupling_residual_max": 1.1758600351963189e-05
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 1.5543887600998523e-05,
+          "coupling_residual_max": 4.147591159409103e-09
+        },
+        {
+          "iteration": 7,
+          "bl_residual_l2": 1.0999525725543212e-08,
+          "coupling_residual_max": 3.3306690738754696e-15
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 6.066666939999777,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": null,
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.8957109610045447,
+                  "xy_over_cref": [
+                    0.9049777455743487,
+                    -0.013011386746407646
+                  ],
+                  "x_over_local_chord": 0.9049777455743487
+                },
+                "end": {
+                  "s_over_cref": 0.9916202538266163,
+                  "xy_over_cref": [
+                    0.9999999999999999,
+                    -4.999999999999994e-06
+                  ],
+                  "x_over_local_chord": 0.9999999999999999
+                },
+                "reaches_trailing_edge": true
+              }
+            ],
+            "separated_arclength_fraction": 0.0968059018876563,
+            "min_cf": -9.42689374041055e-05,
+            "max_Hk": 10.213904017178919
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.07966610718645184,
+              "xy_over_cref": [
+                0.037448599578857135,
+                0.03131270323567074
+              ],
+              "x_over_local_chord": 0.037448599578857135
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.05751692092608523,
+                  "xy_over_cref": [
+                    0.017352490335414028,
+                    0.022079876594113857
+                  ],
+                  "x_over_local_chord": 0.017352490335414028
+                },
+                "end": {
+                  "s_over_cref": 0.07979734732783228,
+                  "xy_over_cref": [
+                    0.03757188889263368,
+                    0.03135766114934675
+                  ],
+                  "x_over_local_chord": 0.03757188889263368
+                },
+                "reaches_trailing_edge": false
+              }
+            ],
+            "separated_arclength_fraction": 0.02134290989771171,
+            "min_cf": -0.0012198851043704819,
+            "max_Hk": 5.416454131006859
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 0.9323840643023066,
+          "CM": -0.008403084731300725,
+          "CD_wake": 0.012117558632296223,
+          "CD_friction": 0.005935692103897678
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 7.0,
+          "converged": true,
+          "CL": 0.8092647026751179
+        },
+        {
+          "alpha_deg": 8.0,
+          "converged": true,
+          "CL": 0.9323840643023066
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 7,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 1.2259732926160503,
+          "coupling_residual_max": 0.004778173507951511
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 0.724136889147699,
+          "coupling_residual_max": 0.0063901501179741416
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.14124602727342261,
+          "coupling_residual_max": 0.0008185342756235336
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.004028751140924544,
+          "coupling_residual_max": 5.043517420341703e-05
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 3.34528841973118e-05,
+          "coupling_residual_max": 1.6342233222221836e-07
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 2.0839995426201557e-07,
+          "coupling_residual_max": 1.766586876783549e-12
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 2.6339515311976996e-09,
+          "coupling_residual_max": 3.4416913763379853e-15
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 5.344027867000477,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": null,
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.9618809145528755,
+                  "xy_over_cref": [
+                    0.9789230727885623,
+                    -0.003024269710270205
+                  ],
+                  "x_over_local_chord": 0.9789230727885623
+                },
+                "end": {
+                  "s_over_cref": 0.9831730147666327,
+                  "xy_over_cref": [
+                    0.9999999999999999,
+                    -4.999999999999994e-06
+                  ],
+                  "x_over_local_chord": 0.9999999999999999
+                },
+                "reaches_trailing_edge": true
+              }
+            ],
+            "separated_arclength_fraction": 0.021758370453382504,
+            "min_cf": -9.404757400443013e-05,
+            "max_Hk": 5.11902364871393
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.07543478032388405,
+              "xy_over_cref": [
+                0.025745966148655073,
+                0.026454364343391133
+              ],
+              "x_over_local_chord": 0.025745966148655073
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.05836477939985356,
+                  "xy_over_cref": [
+                    0.01106464386539462,
+                    0.017825670343691064
+                  ],
+                  "x_over_local_chord": 0.01106464386539462
+                },
+                "end": {
+                  "s_over_cref": 0.07847589556796737,
+                  "xy_over_cref": [
+                    0.028502652736418225,
+                    0.027735961412577184
+                  ],
+                  "x_over_local_chord": 0.028502652736418225
+                },
+                "reaches_trailing_edge": false
+              }
+            ],
+            "separated_arclength_fraction": 0.019071911430233845,
+            "min_cf": -0.0018005344705576364,
+            "max_Hk": 6.9235998747702325
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 1.0794908150651614,
+          "CM": 0.005603078312207313,
+          "CD_wake": 0.01489570610689241,
+          "CD_friction": 0.005770226280266448
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 9.0,
+          "converged": true,
+          "CL": 1.0073023722095733
+        },
+        {
+          "alpha_deg": 10.0,
+          "converged": true,
+          "CL": 1.0794908150651614
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 7,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 1.7210704507056553,
+          "coupling_residual_max": 0.006351078246151609
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 0.664843958349166,
+          "coupling_residual_max": 0.002804845786594956
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.0864617303369626,
+          "coupling_residual_max": 0.0003427691283104384
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.0013510492992332064,
+          "coupling_residual_max": 7.245221585627792e-06
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 1.3838245853353814e-05,
+          "coupling_residual_max": 4.8719057677004685e-09
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 2.749623179254707e-07,
+          "coupling_residual_max": 1.1554091017274004e-12
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 5.6078869888588425e-09,
+          "coupling_residual_max": 3.4416913763379853e-15
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 5.160707012000785,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": null,
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.0002929869580668815,
+            "max_Hk": 3.0579304694624607
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.07816359666472848,
+              "xy_over_cref": [
+                0.019778058783641188,
+                0.023425300324200284
+              ],
+              "x_over_local_chord": 0.019778058783641188
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.06353108875968048,
+                  "xy_over_cref": [
+                    0.007804483524949578,
+                    0.01509258800706671
+                  ],
+                  "x_over_local_chord": 0.007804483524949578
+                },
+                "end": {
+                  "s_over_cref": 0.08152806903860123,
+                  "xy_over_cref": [
+                    0.02274131737408893,
+                    0.025015231478072546
+                  ],
+                  "x_over_local_chord": 0.02274131737408893
+                },
+                "reaches_trailing_edge": false
+              }
+            ],
+            "separated_arclength_fraction": 0.01696265209812268,
+            "min_cf": -0.0025536514622036123,
+            "max_Hk": 8.017157202651845
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 1.2212843196048018,
+          "CM": 0.018580207285023204,
+          "CD_wake": 0.018837763189439635,
+          "CD_friction": 0.0054532231110111795
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 11.0,
+          "converged": true,
+          "CL": 1.1469226933600978
+        },
+        {
+          "alpha_deg": 12.0,
+          "converged": true,
+          "CL": 1.2212843196048018
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 7,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 1.1314709219717982,
+          "coupling_residual_max": 0.008060168673471813
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 3.72537339146544,
+          "coupling_residual_max": 0.02538411067246671
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.7327694950266723,
+          "coupling_residual_max": 0.0064380355496461705
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.1387927245362963,
+          "coupling_residual_max": 0.00025205770196345956
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.014000081028124754,
+          "coupling_residual_max": 2.0663523886965685e-05
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 9.061396524934173e-05,
+          "coupling_residual_max": 2.1619263046446235e-09
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 1.3226013241323834e-08,
+          "coupling_residual_max": 1.7985612998927536e-14
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 5.010192448000453,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": null,
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.0001858577464569445,
+            "max_Hk": 2.404274970365625
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.08323470134302559,
+              "xy_over_cref": [
+                0.01638408914262785,
+                0.021479947127111248
+              ],
+              "x_over_local_chord": 0.01638408914262785
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.07024152344756991,
+                  "xy_over_cref": [
+                    0.006191060153526371,
+                    0.013493032027032779
+                  ],
+                  "x_over_local_chord": 0.006191060153526371
+                },
+                "end": {
+                  "s_over_cref": 0.08580921982014562,
+                  "xy_over_cref": [
+                    0.018606789051544934,
+                    0.022775615878871166
+                  ],
+                  "x_over_local_chord": 0.018606789051544934
+                },
+                "reaches_trailing_edge": false
+              },
+              {
+                "start": {
+                  "s_over_cref": 0.9798949455625761,
+                  "xy_over_cref": [
+                    0.9059888341611341,
+                    0.01288114193972637
+                  ],
+                  "x_over_local_chord": 0.9059888341611341
+                },
+                "end": {
+                  "s_over_cref": 1.0747847949242098,
+                  "xy_over_cref": [
+                    1.0000000000000002,
+                    5.000000000000021e-06
+                  ],
+                  "x_over_local_chord": 1.0000000000000002
+                },
+                "reaches_trailing_edge": true
+              }
+            ],
+            "separated_arclength_fraction": 0.10340288303087684,
+            "min_cf": -0.0029402297286493678,
+            "max_Hk": 8.623216613753126
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 1.316693408193412,
+          "CM": 0.03310879283973479,
+          "CD_wake": 0.02566903743992857,
+          "CD_friction": 0.00491557579274728
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 13.0,
+          "converged": true,
+          "CL": 1.2750411384740674
+        },
+        {
+          "alpha_deg": 14.0,
+          "converged": true,
+          "CL": 1.316693408193412
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 7,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 0.933498872541449,
+          "coupling_residual_max": 0.010412903020523778
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 2.377075103948181,
+          "coupling_residual_max": 0.0303154822820193
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.4547074118976772,
+          "coupling_residual_max": 0.0030150358711318326
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.037579168453223934,
+          "coupling_residual_max": 0.00014823714155798307
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.0010287042207927021,
+          "coupling_residual_max": 9.089331438616455e-07
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 7.319661674856328e-07,
+          "coupling_residual_max": 1.2685852368576889e-11
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 7.698296193635425e-10,
+          "coupling_residual_max": 3.397282455352979e-14
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 4.653605092000362,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": null,
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.00019388151296701624,
+            "max_Hk": 2.3755274904572605
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.08898863644600707,
+              "xy_over_cref": [
+                0.014440994329273722,
+                0.020223215902668682
+              ],
+              "x_over_local_chord": 0.014440994329273722
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.07648370923469498,
+                  "xy_over_cref": [
+                    0.00495488073644458,
+                    0.01215020023198293
+                  ],
+                  "x_over_local_chord": 0.00495488073644458
+                },
+                "end": {
+                  "s_over_cref": 0.09260239341633812,
+                  "xy_over_cref": [
+                    0.0174917202982149,
+                    0.022157105210782353
+                  ],
+                  "x_over_local_chord": 0.0174917202982149
+                },
+                "reaches_trailing_edge": false
+              },
+              {
+                "start": {
+                  "s_over_cref": 0.7371638179504346,
+                  "xy_over_cref": [
+                    0.656725783888084,
+                    0.040479975905209194
+                  ],
+                  "x_over_local_chord": 0.656725783888084
+                },
+                "end": {
+                  "s_over_cref": 1.0828533081050864,
+                  "xy_over_cref": [
+                    1.0000000000000002,
+                    5.000000000000021e-06
+                  ],
+                  "x_over_local_chord": 1.0000000000000002
+                },
+                "reaches_trailing_edge": true
+              }
+            ],
+            "separated_arclength_fraction": 0.33620336057647904,
+            "min_cf": -0.0034958977533216455,
+            "max_Hk": 9.310584751914114
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 1.363331095094672,
+          "CM": 0.036355852267260284,
+          "CD_wake": 0.04023728452775892,
+          "CD_friction": 0.004174613619524142
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 15.0,
+          "converged": true,
+          "CL": 1.3477915740034712
+        },
+        {
+          "alpha_deg": 16.0,
+          "converged": true,
+          "CL": 1.363331095094672
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 8,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 1.2473080607290437,
+          "coupling_residual_max": 0.023371916285308436
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 1.26185586607749,
+          "coupling_residual_max": 0.04769668287959128
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 0.2568310636208144,
+          "coupling_residual_max": 0.04114483848224393
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.03985411365470831,
+          "coupling_residual_max": 0.0027829745934133676
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.0010231633189012712,
+          "coupling_residual_max": 8.794452634486305e-05
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 5.2088581205744414e-05,
+          "coupling_residual_max": 7.108734544347683e-07
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 5.29348956939988e-07,
+          "coupling_residual_max": 4.569566947054682e-12
+        },
+        {
+          "iteration": 7,
+          "bl_residual_l2": 8.693257814879912e-09,
+          "coupling_residual_max": 2.5646151868841116e-14
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 5.1650394320004125,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": null,
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.0006629951229105636,
+            "max_Hk": 2.3592499490777636
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.08992120380288245,
+              "xy_over_cref": [
+                0.013444020828537894,
+                0.01957840551065608
+              ],
+              "x_over_local_chord": 0.013444020828537894
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.07819767553616717,
+                  "xy_over_cref": [
+                    0.0047063942458150446,
+                    0.011829063688356248
+                  ],
+                  "x_over_local_chord": 0.0047063942458150446
+                },
+                "end": {
+                  "s_over_cref": 0.09246100677634747,
+                  "xy_over_cref": [
+                    0.015576192575869454,
+                    0.02095742561421985
+                  ],
+                  "x_over_local_chord": 0.015576192575869454
+                },
+                "reaches_trailing_edge": false
+              },
+              {
+                "start": {
+                  "s_over_cref": 0.4013711648797859,
+                  "xy_over_cref": [
+                    0.3194669476805995,
+                    0.059914219935241035
+                  ],
+                  "x_over_local_chord": 0.3194669476805995
+                },
+                "end": {
+                  "s_over_cref": 1.0849734515870106,
+                  "xy_over_cref": [
+                    1.0000000000000002,
+                    5.000000000000021e-06
+                  ],
+                  "x_over_local_chord": 1.0000000000000002
+                },
+                "reaches_trailing_edge": true
+              }
+            ],
+            "separated_arclength_fraction": 0.6433820730727993,
+            "min_cf": -0.003347272053740914,
+            "max_Hk": 9.82722826146739
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 1.263633762814934,
+          "CM": 0.015413567861002586,
+          "CD_wake": 0.08329080929277183,
+          "CD_friction": 0.0031061877668408936
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 17.0,
+          "converged": true,
+          "CL": 1.3402408440421765
+        },
+        {
+          "alpha_deg": 18.0,
+          "converged": true,
+          "CL": 1.263633762814934
+        }
+      ]
+    },
+    {
+      "model": "Newton-coupled mfoil boundary layers, multi-element potential flow",
+      "iterations": 10,
+      "history": [
+        {
+          "iteration": 0,
+          "bl_residual_l2": 1.2495298870820317,
+          "coupling_residual_max": 0.05117494420801516
+        },
+        {
+          "iteration": 1,
+          "bl_residual_l2": 0.7116762067893663,
+          "coupling_residual_max": 0.03216553046593962
+        },
+        {
+          "iteration": 2,
+          "bl_residual_l2": 1.1678414972709847,
+          "coupling_residual_max": 0.035625194630621415
+        },
+        {
+          "iteration": 3,
+          "bl_residual_l2": 0.3147575806827136,
+          "coupling_residual_max": 0.009285051101896258
+        },
+        {
+          "iteration": 4,
+          "bl_residual_l2": 0.10868185960316162,
+          "coupling_residual_max": 0.010529448262428076
+        },
+        {
+          "iteration": 5,
+          "bl_residual_l2": 0.032496324202737466,
+          "coupling_residual_max": 0.0031770129746144793
+        },
+        {
+          "iteration": 6,
+          "bl_residual_l2": 0.0015047528689056274,
+          "coupling_residual_max": 0.00010486196314496432
+        },
+        {
+          "iteration": 7,
+          "bl_residual_l2": 9.034154203531063e-05,
+          "coupling_residual_max": 8.764997350141357e-07
+        },
+        {
+          "iteration": 8,
+          "bl_residual_l2": 6.079981641650529e-07,
+          "coupling_residual_max": 3.563251915750243e-10
+        },
+        {
+          "iteration": 9,
+          "bl_residual_l2": 1.8143902745547019e-09,
+          "coupling_residual_max": 9.170442183403793e-14
+        }
+      ],
+      "failure_reason": "",
+      "wall_seconds": 6.460711345000163,
+      "ncrit": 9,
+      "reynolds": 1000000,
+      "mach": 0.0,
+      "te_gap_added_over_local_chord": {
+        "main": 1e-05
+      },
+      "initialization": {
+        "main": "inviscid marching"
+      },
+      "cd_definition": "Sum of Squire-Young wake momentum drag estimates; independent, non-merging wakes",
+      "status": "converged",
+      "boundary_layers": {
+        "main": {
+          "lower": {
+            "transition": null,
+            "separation_regions": [],
+            "separated_arclength_fraction": 0.0,
+            "min_cf": 0.00036210561625999165,
+            "max_Hk": 2.3529392080050457
+          },
+          "upper": {
+            "transition": {
+              "s_over_cref": 0.08554063660975846,
+              "xy_over_cref": [
+                0.013152974591637636,
+                0.019390166166309477
+              ],
+              "x_over_local_chord": 0.013152974591637636
+            },
+            "separation_regions": [
+              {
+                "start": {
+                  "s_over_cref": 0.07383129598476378,
+                  "xy_over_cref": [
+                    0.004502980430804981,
+                    0.011566177728991807
+                  ],
+                  "x_over_local_chord": 0.004502980430804981
+                },
+                "end": {
+                  "s_over_cref": 0.08896989343406328,
+                  "xy_over_cref": [
+                    0.016031845351108926,
+                    0.021252127172894122
+                  ],
+                  "x_over_local_chord": 0.016031845351108926
+                },
+                "reaches_trailing_edge": false
+              },
+              {
+                "start": {
+                  "s_over_cref": 0.20643081716541248,
+                  "xy_over_cref": [
+                    0.12890299510755215,
+                    0.051055059479973665
+                  ],
+                  "x_over_local_chord": 0.12890299510755215
+                },
+                "end": {
+                  "s_over_cref": 1.0809395732095604,
+                  "xy_over_cref": [
+                    1.0000000000000002,
+                    5.000000000000021e-06
+                  ],
+                  "x_over_local_chord": 1.0000000000000002
+                },
+                "reaches_trailing_edge": true
+              }
+            ],
+            "separated_arclength_fraction": 0.8266878727136133,
+            "min_cf": -0.002906081230848642,
+            "max_Hk": 12.547493943786733
+          }
+        }
+      },
+      "element_forces": {
+        "main": {
+          "CL": 1.0394805461140826,
+          "CM": -0.019170969030545555,
+          "CD_wake": 0.15606042138078363,
+          "CD_friction": 0.0020306740139451203
+        }
+      },
+      "continuation": [
+        {
+          "alpha_deg": 19.0,
+          "converged": true,
+          "CL": 1.1626026247954155
+        },
+        {
+          "alpha_deg": 20.0,
+          "converged": true,
+          "CL": 1.0394805461140826
+        }
+      ]
+    }
+  ]
+}

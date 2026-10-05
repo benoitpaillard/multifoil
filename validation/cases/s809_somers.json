@@ -1,0 +1,39 @@
+{
+  "description": "S809 Somers NREL/SR-440-6918: geometry Table 2; digitized CL Fig17(c)(i), transition ranges Fig15(c). Re2e6, smooth free transition. Low-speed Mach=0 approximation; Ncrit9 assumed, not fitted.",
+  "reference_chord": 1.0,
+  "reynolds": 2000000,
+  "mach": 0.0,
+  "ncrit": 9,
+  "iterations": 100,
+  "alpha_deg": [
+    -0.01,
+    0.0,
+    2.05,
+    4.0,
+    4.1,
+    6.0,
+    6.16,
+    8.0,
+    8.2,
+    9.22,
+    10.0,
+    10.21,
+    11.21,
+    12.0,
+    12.22,
+    13.24,
+    14.24,
+    15.0,
+    15.24,
+    16.24,
+    18.2,
+    20.15
+  ],
+  "elements": [
+    {
+      "name": "main",
+      "file": "../data/s809/geometry.dat",
+      "panels": 240
+    }
+  ]
+}

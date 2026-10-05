@@ -1,0 +1,14 @@
+test_multiple_elements_order_and_far_limit (test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit) ... FAIL
+
+======================================================================
+FAIL: test_multiple_elements_order_and_far_limit (test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/jony/multifoil-runs/s702-repeatability-20260916/test_viscous.py", line 93, in test_multiple_elements_order_and_far_limit
+    self.assertLess(abs(forward.cl-reverse.cl),5e-7)
+AssertionError: 1.1415574480699853e-06 not less than 5e-07
+
+----------------------------------------------------------------------
+Ran 1 test in 96.984s
+
+FAILED (failures=1)

@@ -1,0 +1,142 @@
+{
+  "executed_utc": "2026-09-08",
+  "baseline_conditions": "Ncrit9; base meshes; no coefficient or angle fitting",
+  "solver_files_sha256": {
+    "multifoil.py": "e49d6d2917f6287acdab2a05e172abb11a8a68f2cb20494371130475dbbc227c",
+    "viscous.py": "75d6484d31bb14b61966f80c1635ae294df977f0ca6db8c0ae40d0c4f8872cc5",
+    "vendor/mfoil.py": "c9473e895a7256990c07630eb8bcc7b8310bf3dcb3cc6f62aab2e1bf61acc651"
+  },
+  "cases": {
+    "naca0012_ladson": {
+      "versions": {
+        "python": "3.12.13",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8"
+      },
+      "flow_points_requested": 18,
+      "flow_points_converged": 18,
+      "failed_angles": []
+    },
+    "s809_somers": {
+      "versions": {
+        "python": "3.12.13",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8"
+      },
+      "flow_points_requested": 22,
+      "flow_points_converged": 20,
+      "failed_angles": [
+        -0.01,
+        6.16
+      ]
+    },
+    "nlr7301": {
+      "versions": {
+        "python": "3.12.13",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8"
+      },
+      "flow_points_requested": 4,
+      "flow_points_converged": 4,
+      "failed_angles": []
+    },
+    "nlr7301_mses": {
+      "reference_kind": "published_solver",
+      "versions": {
+        "python": "3.12.13",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8"
+      },
+      "flow_points_requested": 10,
+      "flow_points_converged": 10,
+      "failed_angles": [],
+      "reference": "ICAS2006 Figure6 green MSES curve; original MSES not run"
+    },
+    "naca0012_mses_drag": {
+      "reference_kind": "published_solver",
+      "versions": {
+        "python": "3.12.13",
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8"
+      },
+      "flow_points_requested": 8,
+      "flow_points_converged": 8,
+      "failed_angles": [],
+      "local_supersonic_angles_deg": [
+        12.0,
+        14.0,
+        16.0,
+        18.0
+      ],
+      "reference": "COBEM2005 Figure3 red MSES curve vertices; MSES not run"
+    }
+  },
+  "new_comparison_tests_passed": 10,
+  "mses_addition_utc": "2026-09-08",
+  "mses_drag_addition_utc": "2026-09-08",
+  "default_flow_points_requested": 62,
+  "default_flow_points_converged": 60,
+  "mses_drag_panel_or_wake_sensitivity_executed": false,
+  "optimization_pilot": {
+    "status": "completed",
+    "requested_geometry_setting_combinations": 26,
+    "target_CL": 2.484,
+    "reynolds": 2510000,
+    "mach": 0.185,
+    "scope": "Numerical design sensitivity, not independently validated geometry rankings",
+    "solver_equations_changed": false,
+    "contract_tests_passed": 7,
+    "comparison_integrity_tests_passed": 10,
+    "original_combinations": 26,
+    "original_combinations_feasible": 26,
+    "adaptive_fine_grid_jobs": 3,
+    "baseline_retry_jobs": 2,
+    "total_job_attempts": 31,
+    "total_feasible_attempts": 29,
+    "requested_incidence_evaluations": 172,
+    "max_abs_lift_error": 1.325077411751252e-05,
+    "failed_attempts": [
+      {
+        "geometry": "baseline",
+        "setting": "ncrit6_fine",
+        "camber_amplitude": 0.0,
+        "flap_dy": 0.0,
+        "clearance": 0.02608237047055663,
+        "feasible": false,
+        "alpha_deg": null,
+        "CL": null,
+        "CD": null,
+        "CM": null,
+        "lift_error": null,
+        "failure_reason": "LiftTargetError: Inadmissible flow evaluation at alpha=4",
+        "flow_evaluations": 1,
+        "wall_seconds": 157.99666435499967
+      },
+      {
+        "geometry": "baseline",
+        "setting": "ncrit6_fine",
+        "camber_amplitude": 0.0,
+        "flap_dy": 0.0,
+        "clearance": 0.02608237047055663,
+        "feasible": false,
+        "alpha_deg": null,
+        "CL": null,
+        "CD": null,
+        "CM": null,
+        "lift_error": null,
+        "failure_reason": "LiftTargetError: Inadmissible flow evaluation at alpha=4",
+        "flow_evaluations": 1,
+        "wall_seconds": 207.98690465099935
+      }
+    ],
+    "independent_geometry_ranking_validated": false,
+    "ncrit6_ordering_reversal_seen_on_base_and_fine": true,
+    "execution_restarts": "Completed jobs reused after two execution-session interruptions; incomplete jobs restarted."
+  },
+  "optional_full_nlr_executed": false
+}

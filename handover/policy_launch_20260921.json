@@ -1,0 +1,34 @@
+{
+  "observed_utc": "2026-09-21T14:50:43.333818+00:00",
+  "remote_root": "/home/jony/multifoil-runs/s702-policy-20260921",
+  "launcher": {
+    "launcher_pid": 46112,
+    "launched_utc": "2026-09-21T14:47:44.128728+00:00",
+    "remote_root": "/home/jony/multifoil-runs/s702-policy-20260921",
+    "workers": 7,
+    "payload_files_verified": 92
+  },
+  "launch_status": {
+    "phase": "execution_failed",
+    "exit_code": 1,
+    "launcher_pid": 46112,
+    "hostname": "jony4",
+    "updated_utc": "2026-09-21T14:50:00.922979+00:00"
+  },
+  "study_status": null,
+  "runtime": null,
+  "preflight_test_summary": [
+    "Ran 46 tests in 136.036s\n\nFAILED (failures=1)"
+  ],
+  "active_processes": [],
+  "log_tail": [
+    "    self.assertLess(abs(forward.cl-reverse.cl),5e-7)",
+    "AssertionError: 1.1415574480699853e-06 not less than 5e-07",
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 46 tests in 136.036s",
+    "",
+    "FAILED (failures=1)",
+    "{\"phase\": \"execution_failed\", \"exit_code\": 1, \"launcher_pid\": 46112, \"hostname\": \"jony4\", \"updated_utc\": \"2026-09-21T14:50:00.922979+00:00\"}"
+  ]
+}

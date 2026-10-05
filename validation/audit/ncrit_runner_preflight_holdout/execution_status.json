@@ -1,0 +1,5 @@
+{
+  "status": "runner_preflight_error",
+  "aerodynamic_evaluations": 0,
+  "reason": "Relative --out path was not normalized before writing metadata; fixed before starting the transfer calculation."
+}

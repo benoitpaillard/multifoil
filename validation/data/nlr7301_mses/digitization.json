@@ -1,0 +1,51 @@
+{
+  "source_url": "https://www.icas.org/icas_archive/ICAS2006/PAPERS/512.PDF",
+  "figure": "6",
+  "pdf_page_one_based": 6,
+  "embedded_image_xref": 46,
+  "image_width": 494,
+  "image_height": 456,
+  "image_sha256": "20fad5d13b1e28713854ecac5cc467b2afff04094bc32b61fb181dfd3cee6e27",
+  "alpha_calibration": [
+    [
+      65.0,
+      0.0
+    ],
+    [
+      397.0,
+      15.0
+    ]
+  ],
+  "cl_calibration": [
+    [
+      360.0,
+      1.5
+    ],
+    [
+      103.0,
+      3.0
+    ]
+  ],
+  "sampling_alpha_deg": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    13,
+    14,
+    15
+  ],
+  "column_half_width_px": 1.5,
+  "curve_y_limits_px": [
+    86,
+    400
+  ],
+  "green_min": 100,
+  "green_channel_margin": 60,
+  "cl_reading_allowance": 0.015,
+  "alpha_reading_allowance_deg": 0.1,
+  "method": "Median green-curve pixel y within 1.5px of the prescribed alpha. Linear axis calibration; samples can fall between original MSES markers. Visual audit required, especially green/red overlap near peak."
+}

@@ -1,0 +1,6 @@
+camber_plus / coarse: feasible=True CL=2.484000636444203 CD=0.02188514155670327 
+baseline / coarse: feasible=True CL=2.4840007082809077 CD=0.021956288477499336 
+camber_minus / coarse: feasible=True CL=2.484000728970665 CD=0.02203484441219078 
+flap_down / coarse: feasible=True CL=2.4840006718767897 CD=0.021954237147645446 
+flap_up / coarse: feasible=True CL=2.4840006770353056 CD=0.02196282457197203 
+baseline / base: feasible=True CL=2.484000535124748 CD=0.02200182913048741 

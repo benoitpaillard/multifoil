@@ -1,0 +1,21 @@
+VISCOUS: coupled mfoil boundary layers, natural transition and limited separation; independent wakes.
+alpha= -4.050 CL= -0.45896 CD=0.006009 CM= -0.00060 converged=True
+alpha= -2.000 CL= -0.22746 CD=0.005358 CM= -0.00008 converged=True
+alpha=  0.050 CL=  0.00570 CD=0.005108 CM=  0.00000 converged=True
+alpha=  1.980 CL=  0.22519 CD=0.005351 CM=  0.00008 converged=True
+alpha=  4.180 CL=  0.47358 CD=0.006060 CM=  0.00065 converged=True
+alpha=  6.200 CL=  0.69936 CD=0.006961 CM=  0.00199 converged=True
+alpha=  8.220 CL=  0.91992 CD=0.008255 CM=  0.00468 converged=True
+alpha= 10.180 CL=  1.16353 CD=0.010144 CM=  0.00025 converged=True
+alpha= 11.080 CL=  1.25443 CD=0.011133 CM=  0.00265 converged=True
+alpha= 12.250 CL=  1.36657 CD=0.012587 CM=  0.00686 converged=True
+alpha= 13.100 CL=  1.44923 CD=0.013785 CM=  0.00945 converged=True
+alpha= 14.280 CL=  1.55700 CD=0.015824 CM=  0.01382 converged=True
+alpha= 15.200 CL=  1.63131 CD=0.017774 CM=  0.01842 converged=True
+alpha= 16.180 CL=  1.68838 CD=0.020201 CM=  0.02618 converged=True
+alpha= 16.900 CL=  1.72091 CD=0.022815 CM=  0.03139 converged=True
+alpha= 17.350 CL=  1.73662 CD=0.025025 CM=  0.03408 converged=True
+alpha= 17.650 CL=  1.74454 CD=0.026854 CM=  0.03551 converged=True
+alpha= 18.650 CL=  1.75133 CD=0.036097 CM=  0.03703 converged=True
+Stall diagnostic: not_bracketed (see stall.json; failure is not stall)
+Saved /workspace/scratch/786202b76db3/multifoil/validation/results/naca0012_ladson in 324.13 s

@@ -1,0 +1,9 @@
+quantity,condition,absolute_limit,unit,source_printed_page
+alpha,reported,0.5,degree,5
+CLmax,reported,0.03,coefficient,5
+CM_ac,reported,0.003,coefficient,5
+CD,CL=0,0.0003,coefficient,5
+CD,CL=1,0.0006,coefficient,5
+CD,CL=2.5,0.002,coefficient,5
+flap_deflection,reported,0.2,degree,5
+flap_position,reported,0.001,original_chord,5

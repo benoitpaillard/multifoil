@@ -1,0 +1,92 @@
+{
+  "backend": "panel",
+  "case": {
+    "description": "Synthetic main + flap demo; not an experimentally validated high-lift section.",
+    "reference_chord": 1.0,
+    "moment_reference": [
+      0.25,
+      0.0
+    ],
+    "alpha_deg": [
+      -2,
+      0,
+      2,
+      4,
+      6,
+      8
+    ],
+    "reynolds": 1000000,
+    "mach": 0.0,
+    "ncrit": 9,
+    "elements": [
+      {
+        "name": "main",
+        "naca": "2412",
+        "panels": 200
+      },
+      {
+        "name": "flap",
+        "naca": "0012",
+        "scale": 0.3,
+        "angle_deg": -20,
+        "translation": [
+          0.93,
+          -0.055
+        ],
+        "panels": 140
+      }
+    ]
+  },
+  "coordinate_units": "x/reference_chord, y/reference_chord",
+  "diagnostics": [
+    {
+      "model": "inviscid linear vortex panels",
+      "cl_pressure_total": 1.292844809129614,
+      "cl_circulation_total": 1.3006484000560963,
+      "kutta_residual": 0.0,
+      "note": "CL uses total circulation; pressure drag is discretization error, not viscous drag."
+    },
+    {
+      "model": "inviscid linear vortex panels",
+      "cl_pressure_total": 1.5711165828311493,
+      "cl_circulation_total": 1.5803483555767843,
+      "kutta_residual": 0.0,
+      "note": "CL uses total circulation; pressure drag is discretization error, not viscous drag."
+    },
+    {
+      "model": "inviscid linear vortex panels",
+      "cl_pressure_total": 1.8474452976068199,
+      "cl_circulation_total": 1.858122900060204,
+      "kutta_residual": 0.0,
+      "note": "CL uses total circulation; pressure drag is discretization error, not viscous drag."
+    },
+    {
+      "model": "inviscid linear vortex panels",
+      "cl_pressure_total": 2.1214596855332175,
+      "cl_circulation_total": 2.1336336080117912,
+      "kutta_residual": 4.440892098500626e-16,
+      "note": "CL uses total circulation; pressure drag is discretization error, not viscous drag."
+    },
+    {
+      "model": "inviscid linear vortex panels",
+      "cl_pressure_total": 2.3927919940496776,
+      "cl_circulation_total": 2.4065448120730797,
+      "kutta_residual": 0.0,
+      "note": "CL uses total circulation; pressure drag is discretization error, not viscous drag."
+    },
+    {
+      "model": "inviscid linear vortex panels",
+      "cl_pressure_total": 2.6610788055138572,
+      "cl_circulation_total": 2.676524011980667,
+      "kutta_residual": 4.440892098500626e-16,
+      "note": "CL uses total circulation; pressure drag is discretization error, not viscous drag."
+    }
+  ],
+  "inviscid_warning": "Inviscid backend has no viscous CD, Reynolds effects, transition or stall.",
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  }
+}

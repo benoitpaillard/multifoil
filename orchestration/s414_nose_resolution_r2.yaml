@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "id": "s414-nose-resolution-20261005-r2",
+  "project_root": "/home/jony/multifoil",
+  "objective": "Determine whether early fore-lower transition and excess drag survive local coupled refinement on the same polygon and station metric.",
+  "authorization": "User approved the bounded six-case pilot and independent prelaunch/postanalysis review. No physical changes, extra cases, retries or outbound data request.",
+  "resources": {
+    "remote_workers": 2,
+    "max_final_cases": 6,
+    "max_requested_evaluations": 30,
+    "max_remote_wall_seconds": 5400,
+    "max_case_seconds": 1800,
+    "attempts_per_case": 1,
+    "thread_limits": 1,
+    "monitor_max_hours": 3
+  },
+  "reviewer": {
+    "effort": "high",
+    "timeout_seconds": 900,
+    "model": "gpt-6-astra"
+  },
+  "files": [
+    "AGENTS.md",
+    "CODEX_HANDOVER.md",
+    "DEVELOPMENT_PLAN.md",
+    "LICENSE",
+    "THIRD_PARTY.md",
+    "amplification_jacobian.py",
+    "diagnostic_discretization.py",
+    "multifoil.py",
+    "optimization.py",
+    "orchestration/README.md",
+    "orchestration/build_s414_plan.py",
+    "orchestration/pilot.py",
+    "orchestration/test_pilot.py",
+    "paneling.py",
+    "test_s414_nose_resolution.py",
+    "test_s414_nose_resolution_analysis.py",
+    "test_s414_nose_resolution_runner.py",
+    "validation/S414_NOSE_RESOLUTION_PROTOCOL.md",
+    "validation/S414_V5_NOTES.md",
+    "validation/S414_VERIFICATION_STATUS.md",
+    "validation/audit_s414_nose_resolution.py",
+    "validation/check_s414_nose_resolution.py",
+    "validation/plot_s702_flap_effect.py",
+    "validation/prepare_s414_nose_resolution_payload.py",
+    "validation/report_design_initialization.py",
+    "validation/report_s414_nose_resolution.py",
+    "validation/report_s702_drag_mechanism.py",
+    "validation/report_s702_ncrit_sweep.py",
+    "validation/report_s702_wake_extent.py",
+    "validation/results/s414_geometry_qualification_20261002/report_test_aft.dat",
+    "validation/results/s414_geometry_qualification_20261002/report_test_fore.dat",
+    "validation/results/s414_geometry_qualification_20261002/verification.json",
+    "validation/results/s414_jacobian_20261003/cl0056_corrected_af/aft_state.npz",
+    "validation/results/s414_jacobian_20261003/cl0056_corrected_af/fore_state.npz",
+    "validation/results/s414_jacobian_20261003/cl0056_corrected_af/result.json",
+    "validation/results/s414_jacobian_20261003/cl028_corrected_af/aft_state.npz",
+    "validation/results/s414_jacobian_20261003/cl028_corrected_af/fore_state.npz",
+    "validation/results/s414_jacobian_20261003/cl028_corrected_af/result.json",
+    "validation/results/s414_jacobian_20261003/study.json",
+    "validation/results/s414_jacobian_launch_20261003/retrieved_files_sha256.json",
+    "validation/results/s414_post_verification_review_20261005/FINDINGS.md",
+    "validation/run_s414_nose_resolution.py",
+    "validation/run_s414_transition_boundary.py",
+    "validation/s414_geometry.py",
+    "validation/s414_nose_resolution.py",
+    "validation/s414_nose_resolution_remote.py",
+    "validation/s702_benchmark.py",
+    "validation/s702_geometry.py",
+    "validation/s702_ncrit_sweep.py",
+    "validation/s702_sweep_metrics.py",
+    "validation/s702_transition_study.py",
+    "vendor/__init__.py",
+    "vendor/mfoil.py",
+    "viscous.py"
+  ],
+  "writable_snapshot_paths": [
+    "validation/results/s414_nose_resolution_20261005",
+    "validation/results/s414_nose_resolution_launch_20261005",
+    "validation/results/s414_nose_resolution_analysis_20261005"
+  ],
+  "commands": {
+    "prepare": {
+      "argv": [
+        "/tmp/multifoil-pressure-extraction-env/bin/python",
+        "validation/prepare_s414_nose_resolution_payload.py",
+        "--result",
+        "{result}"
+      ],
+      "timeout_seconds": 300
+    },
+    "submit": {
+      "argv": [
+        "/tmp/multifoil-pressure-extraction-env/bin/python",
+        "validation/s414_nose_resolution_remote.py",
+        "submit",
+        "--job-id",
+        "{job_id}",
+        "--workers",
+        "{workers}",
+        "--payload",
+        "{snapshot}/validation/results/s414_nose_resolution_launch_20261005/s414_nose_resolution_payload.tar.gz",
+        "--result",
+        "{result}"
+      ],
+      "timeout_seconds": 180
+    },
+    "poll": {
+      "argv": [
+        "/tmp/multifoil-pressure-extraction-env/bin/python",
+        "validation/s414_nose_resolution_remote.py",
+        "poll",
+        "--job-id",
+        "{job_id}",
+        "--result",
+        "{result}"
+      ],
+      "timeout_seconds": 60
+    },
+    "collect": {
+      "argv": [
+        "/tmp/multifoil-pressure-extraction-env/bin/python",
+        "validation/s414_nose_resolution_remote.py",
+        "collect",
+        "--job-id",
+        "{job_id}",
+        "--result",
+        "{result}"
+      ],
+      "timeout_seconds": 600
+    },
+    "audit": {
+      "argv": [
+        "/tmp/multifoil-pressure-extraction-env/bin/python",
+        "validation/report_s414_nose_resolution.py",
+        "--audit",
+        "--study",
+        "{snapshot}/validation/results/s414_nose_resolution_20261005",
+        "--launch",
+        "{snapshot}/validation/results/s414_nose_resolution_launch_20261005",
+        "--out",
+        "{snapshot}/validation/results/s414_nose_resolution_analysis_20261005",
+        "--result",
+        "{result}"
+      ],
+      "timeout_seconds": 1800
+    }
+  },
+  "criteria": [
+    {
+      "id": "execution_complete",
+      "description": "The bounded six-case supervisor terminates without execution/budget failure; scientific solve failures remain explicit."
+    },
+    {
+      "id": "evidence_integrity",
+      "description": "Input/transfer hashes, all converged saved states, residuals <=1e-7, forces and exported fields pass fresh checks."
+    },
+    {
+      "id": "archived_controls",
+      "description": "Both factor-1 cases exactly reproduce the archived corrected-AF forces and 18 state arrays before refinement."
+    },
+    {
+      "id": "selected_coverage",
+      "description": "All six selected states are available and converged; no missing case is omitted from the denominator."
+    },
+    {
+      "id": "numerical_screen",
+      "description": "Both fixed-incidence cases meet every protocol tolerance, contraction, topology and transition-cell screen."
+    },
+    {
+      "id": "isolated_nose_refinement",
+      "description": "Frozen polygon, metric and non-nose controls are preserved; wake-coordinate movement <=1e-5c supports nose-only attribution."
+    }
+  ],
+  "protocol": "validation/S414_NOSE_RESOLUTION_PROTOCOL.md",
+  "scientific_decision": "A failed numerical criterion is a valid result, not a command failure or retry trigger. Improved fixed-angle drag is not matched-lift accuracy. No correction follows without independent review.",
+  "stages": [
+    "freeze",
+    "prepare",
+    "prelaunch_review",
+    "submit",
+    "poll",
+    "collect",
+    "audit",
+    "postanalysis_review"
+  ],
+  "stop_conditions": [
+    "Changed source/input or transfer hashes",
+    "Rejected independent prelaunch review",
+    "Unknown remote identity or lost submission reply: reconcile only",
+    "Budget/worker limit exceeded",
+    "Fresh state audit failure",
+    "Protocol, closure, Ncrit or geometry change required"
+  ],
+  "revision_reason": "Revision 1 preparation passed; independent review could not start because CLI rejected its configured gpt-6.1-sol. Pin gpt-6-astra from the freshly retrieved account model catalog (2026-10-05T17:49:53Z); scientific inputs and code unchanged."
+}

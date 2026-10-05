@@ -1,0 +1,15 @@
+{
+  "id": "wenzinger_harris_1939_tr664",
+  "author": "Carl J. Wenzinger and Thomas A. Harris",
+  "title": "Wind-Tunnel Investigation of an NACA 23012 Airfoil with Various Arrangements of Slotted Flaps",
+  "report": "NACA-TR-664",
+  "year": 1939,
+  "url": "https://ntrs.nasa.gov/citations/19930091739",
+  "download_url": "https://ntrs.nasa.gov/api/citations/19930091739/downloads/19930091739.pdf",
+  "sha256_download": "b34a8ed7e710b9baaa4c3bd0a138ba025cbb5b411cc095bde8ad6c68560139f6",
+  "reference_kind": "experiment",
+  "status": "candidate_not_scored",
+  "used": "Printed pp.4-5: geometry, conditions, precision and fittings; p.24 Fig31: envelope-polar interpretation; pp.30-31 Tables I-II: coordinates. PDF page = printed page + 4.",
+  "conditions_qualification": "Physical Re2.19e6. Effective Re3.5e6 is a historical tunnel-turbulence correction, not the input physical Reynolds number. Ncrit unknown; Mach not directly reported.",
+  "observable_qualification": "Drag includes hinge fittings, approximately CD0.001 for neutral sealed configurations. No measured correction for deflected flaps. Envelope polars change flap position/deflection along the curve; not a single geometry polar."
+}

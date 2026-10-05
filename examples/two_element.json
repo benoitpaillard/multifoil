@@ -1,0 +1,14 @@
+{
+  "description": "Synthetic main + flap demo; not an experimentally validated high-lift section.",
+  "reference_chord": 1.0,
+  "moment_reference": [0.25, 0.0],
+  "alpha_deg": [-2, 0, 2, 4, 6, 8],
+  "reynolds": 1000000,
+  "mach": 0.0,
+  "ncrit": 9,
+  "elements": [
+    {"name": "main", "naca": "2412", "panels": 200},
+    {"name": "flap", "naca": "0012", "scale": 0.30,
+     "angle_deg": -20, "translation": [0.93, -0.055], "panels": 140}
+  ]
+}

@@ -1,0 +1,16 @@
+alpha_deg,CL,CL_low,CL_high,alpha_digitization_deg,note,interpretation
+-0.01,0.141,0.126,0.156,0.15,digitized; +/-0.015 CL reading allowance,usable-lift range
+2.05,0.383,0.368,0.398,0.15,digitized; +/-0.015 CL reading allowance,usable-lift range
+4.1,0.629,0.614,0.644,0.15,digitized; +/-0.015 CL reading allowance,usable-lift range
+6.16,0.822,0.807,0.837,0.15,digitized; +/-0.015 CL reading allowance,usable-lift range
+8.2,0.965,0.95,0.98,0.15,digitized; +/-0.015 CL reading allowance,usable-lift range
+9.22,1.014,0.999,1.029,0.15,digitized; +/-0.015 CL reading allowance,usable-lift range
+10.21,1.004,0.989,1.019,0.15,digitized; +/-0.015 CL reading allowance,extensive separation; author questions data validity
+11.21,0.975,0.96,0.99,0.15,digitized; +/-0.015 CL reading allowance,extensive separation; author questions data validity
+12.22,1.01,0.995,1.025,0.15,digitized; +/-0.015 CL reading allowance,extensive separation; author questions data validity
+13.24,1.052,1.037,1.067,0.15,digitized; +/-0.015 CL reading allowance,extensive separation; author questions data validity
+14.24,1.083,1.068,1.098,0.15,digitized; +/-0.015 CL reading allowance,extensive separation; author questions data validity
+15.24,1.099,1.084,1.114,0.15,digitized; +/-0.015 CL reading allowance,extensive separation; author questions data validity
+16.24,1.068,1.043,1.093,0.15,digitized envelope; increasing/decreasing branches not resolved,extensive separation; author questions data validity
+18.2,0.956,0.931,0.981,0.15,digitized envelope; increasing/decreasing branches not resolved,extensive separation; author questions data validity
+20.15,0.882,0.857,0.907,0.15,digitized envelope; increasing/decreasing branches not resolved,extensive separation; author questions data validity

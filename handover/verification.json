@@ -1,0 +1,68 @@
+{
+  "fast_audit": {
+    "verified_utc": "2026-09-14T20:44:34.418024+00:00",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "-v",
+      "test_s702_sweep",
+      "test_s702",
+      "test_s702_pressure"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 2.527814438000405,
+    "scope": "13 existing S702 extraction/provenance/calibration audit tests; no aerodynamic flow solves",
+    "log": "handover/fast_audit_tests.txt"
+  },
+  "full_numerical_suite_rerun_for_handover": false,
+  "reason": "Documentation and packaging update; numerical core unchanged. Historical core-verification results remain archived.",
+  "numerical_core_sha256_verified": {
+    "multifoil.py": "e49d6d2917f6287acdab2a05e172abb11a8a68f2cb20494371130475dbbc227c",
+    "viscous.py": "3a306512cfa885613c3c65038cf42f2cd3692fbbba8d373bfd9527df057c2584",
+    "paneling.py": "f2afcfe50fd550b5c5041b70905277c68a5f3afb16a0a93dacc74696ce62596f",
+    "optimization.py": "5c569fa152dd6ece53e0cd9a8db8b7cbfcdf3892ad6b89beff17e4d1ee88cf07",
+    "vendor/mfoil.py": "c9473e895a7256990c07630eb8bcc7b8310bf3dcb3cc6f62aab2e1bf61acc651"
+  },
+  "frozen_calibration_points_and_summary_hashes_verified": true,
+  "local_markdown_links_checked": 8,
+  "missing_local_markdown_targets": [],
+  "previous_archive_comparison": {
+    "previous_files": 11037,
+    "omitted_files": [],
+    "modified_existing_files": [
+      "README.md",
+      "VALIDATION.md",
+      "validation/OPTIMIZATION_READINESS.md",
+      "validation/README.md"
+    ],
+    "new_files_before_manifest": [
+      "AGENTS.md",
+      "CODEX_HANDOVER.md",
+      "CODEX_START_PROMPT.md",
+      "DEVELOPMENT_PLAN.md",
+      "handover/fast_audit_tests.txt",
+      "handover/status.json",
+      "handover/verification.json",
+      "handover/verify_snapshot.py",
+      "requirements-handover.txt",
+      "validation/plot_s702_flap_effect.py",
+      "validation/results/s702_flap_effect/README.md",
+      "validation/results/s702_flap_effect/provenance.json",
+      "validation/results/s702_flap_effect/s702_flap_5_to_10.csv",
+      "validation/results/s702_flap_effect/s702_flap_drag.pdf",
+      "validation/results/s702_flap_effect/s702_flap_drag.png",
+      "validation/results/s702_flap_effect/s702_flap_drag.svg",
+      "validation/results/s702_flap_effect/s702_flap_drag_change.pdf",
+      "validation/results/s702_flap_effect/s702_flap_drag_change.png",
+      "validation/results/s702_flap_effect/s702_flap_drag_change.svg",
+      "validation/results/s702_flap_effect/s702_flap_drag_data.csv"
+    ],
+    "all_previous_numerical_code_data_and_raw_results_unchanged": true
+  },
+  "snapshot_integrity_command": [
+    "python",
+    "handover/verify_snapshot.py"
+  ],
+  "archive_scope": "Complete project under multifoil/; excludes __pycache__ and .pyc runtime caches; no new aerodynamic calculations."
+}

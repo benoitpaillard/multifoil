@@ -1,0 +1,15 @@
+VISCOUS: coupled mfoil boundary layers, natural transition and limited separation; independent wakes.
+alpha=  0.000 CL=  1.32099 CD=0.025619 CM= -0.34673 converged=True
+alpha=  2.000 CL=  1.64564 CD=0.028102 CM= -0.37607 converged=True
+alpha=  4.000 CL=  1.89918 CD=0.033065 CM= -0.38439 converged=True
+alpha=  6.000 CL=  2.13434 CD=0.038558 CM= -0.38779 converged=True
+alpha=  8.000 CL=  2.33768 CD=0.045729 CM= -0.38292 converged=True
+alpha= 10.000 CL=  2.53267 CD=0.055598 CM= -0.37910 converged=True
+alpha= 12.000 CL=  2.64004 CD=0.072637 CM= -0.35599 converged=True
+alpha= 14.000 CL=      nan CD=nan CM=      nan converged=False
+  Continuation failed at 14 deg: Newton iteration limit reached
+alpha= 16.000 CL=  2.05413 CD=0.244736 CM= -0.34246 converged=True
+alpha= 18.000 CL=      nan CD=nan CM=      nan converged=False
+  Continuation failed at 16.75 deg: Newton iteration limit reached
+Stall diagnostic: not_bracketed (see stall.json; failure is not stall)
+Saved /workspace/scratch/786202b76db3/multifoil/demo_results/stall_two_element in 581.42 s

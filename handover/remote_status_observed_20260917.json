@@ -1,0 +1,20 @@
+{
+  "observed_utc": "2026-09-16T22:12:41.650398+00:00",
+  "remote_root": "/home/jony/multifoil-runs/s702-repeatability-20260916",
+  "launch_status": {
+    "phase": "finished_with_numerical_failures",
+    "exit_code": 2,
+    "launcher_pid": 14949,
+    "hostname": "jony4",
+    "updated_utc": "2026-09-16T12:48:40.551396+00:00"
+  },
+  "study_status": {
+    "state": "finished",
+    "updated_utc": "2026-09-16T12:48:40.413732+00:00",
+    "completed_jobs": 11,
+    "total_jobs": 11,
+    "converged_targets": 18,
+    "required_targets": 19,
+    "followup": "Review comparison.csv, path_spans.csv and selected states before changing the policy"
+  }
+}

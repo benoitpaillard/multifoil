@@ -1,0 +1,9 @@
+alpha_deg,CD,CD_low,CD_high,alpha_reading_allowance_deg,reference_kind,reference_solver
+0.0,0.004776,0.003576,0.005976,0.1,published_solver,MSES
+4.0,0.00597,0.00477,0.00717,0.1,published_solver,MSES
+8.0,0.009552,0.008352,0.010752,0.1,published_solver,MSES
+10.0,0.010746,0.009546,0.011946,0.1,published_solver,MSES
+12.0,0.014328,0.013128,0.015528,0.1,published_solver,MSES
+14.0,0.025075,0.023875,0.026275,0.1,published_solver,MSES
+16.0,0.058507,0.057307,0.059707,0.1,published_solver,MSES
+18.0,0.106269,0.105069,0.107469,0.1,published_solver,MSES

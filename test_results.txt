@@ -1,0 +1,25 @@
+test_blunt_te_closure (test_multifoil.PanelPhysics.test_blunt_te_closure) ... ok
+test_collision_rejection (test_multifoil.PanelPhysics.test_collision_rejection) ... ok
+test_examples (test_multifoil.PanelPhysics.test_examples) ... ok
+test_far_separated_elements (test_multifoil.PanelPhysics.test_far_separated_elements) ... ok
+test_joukowski_exact_lift (test_multifoil.PanelPhysics.test_joukowski_exact_lift) ... ok
+test_mirror_symmetry_of_whole_configuration (test_multifoil.PanelPhysics.test_mirror_symmetry_of_whole_configuration) ... ok
+test_multi_element_order_independence_and_coupling (test_multifoil.PanelPhysics.test_multi_element_order_independence_and_coupling) ... ok
+test_panel_refinement_and_pressure_drag (test_multifoil.PanelPhysics.test_panel_refinement_and_pressure_drag) ... ok
+test_reference_chord_normalization (test_multifoil.PanelPhysics.test_reference_chord_normalization) ... ok
+test_selig_orientation (test_multifoil.PanelPhysics.test_selig_orientation) ... ok
+test_surface_and_off_body_velocity_consistency (test_multifoil.PanelPhysics.test_surface_and_off_body_velocity_consistency) ... ok
+test_symmetric_zero_lift_and_antisymmetric_polar (test_multifoil.PanelPhysics.test_symmetric_zero_lift_and_antisymmetric_polar) ... ok
+test_boundary_layer_residual_and_jacobian_match_upstream (test_viscous.ViscousPhysics.test_boundary_layer_residual_and_jacobian_match_upstream) ... ok
+test_cross_body_sources_against_independent_velocity_integral (test_viscous.ViscousPhysics.test_cross_body_sources_against_independent_velocity_integral) ... ok
+test_failure_is_not_a_force_or_a_stall_prediction (test_viscous.ViscousPhysics.test_failure_is_not_a_force_or_a_stall_prediction) ... ok
+test_local_chord_and_reynolds_scaling (test_viscous.ViscousPhysics.test_local_chord_and_reynolds_scaling) ... ok
+test_multiple_elements_order_and_far_limit (test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit) ... ok
+test_reynolds_and_transition_sensitivity (test_viscous.ViscousPhysics.test_reynolds_and_transition_sensitivity) ... ok
+test_single_element_against_native_mfoil (test_viscous.ViscousPhysics.test_single_element_against_native_mfoil) ... ok
+test_symmetry_positive_drag_and_residuals (test_viscous.ViscousPhysics.test_symmetry_positive_drag_and_residuals) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 122.789s
+
+OK

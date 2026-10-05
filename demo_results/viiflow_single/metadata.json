@@ -1,0 +1,54 @@
+{
+  "backend": "viiflow",
+  "case": {
+    "description": "Symmetric NACA 0012 baseline for numerical checks and optional Viiflow Basic.",
+    "reference_chord": 1.0,
+    "moment_reference": [
+      0.25,
+      0.0
+    ],
+    "alpha_deg": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "reynolds": 1000000,
+    "mach": 0.0,
+    "ncrit": 9,
+    "elements": [
+      {
+        "name": "main",
+        "naca": "0012",
+        "panels": 200
+      }
+    ]
+  },
+  "coordinate_units": "x/reference_chord, y/reference_chord",
+  "diagnostics": [
+    {
+      "model": "Viiflow viscous-inviscid",
+      "cd_definition": "sum of element wake drag coefficients"
+    },
+    {
+      "model": "Viiflow viscous-inviscid",
+      "cd_definition": "sum of element wake drag coefficients"
+    },
+    {
+      "model": "Viiflow viscous-inviscid",
+      "cd_definition": "sum of element wake drag coefficients"
+    },
+    {
+      "model": "Viiflow viscous-inviscid",
+      "cd_definition": "sum of element wake drag coefficients"
+    }
+  ],
+  "inviscid_warning": "Inviscid backend has no viscous CD, Reynolds effects, transition or stall.",
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8",
+    "viiflow": "1.9.4"
+  }
+}

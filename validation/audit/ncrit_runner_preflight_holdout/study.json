@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "ncrit_values": [
+    9.0
+  ],
+  "flaps": [
+    0,
+    5,
+    10
+  ],
+  "targets": [
+    0.5,
+    0.8,
+    1.2
+  ],
+  "jobs": [
+    {
+      "name": "n9_d+0",
+      "ncrit": 9.0,
+      "flap": 0,
+      "seed_alphas": {
+        "0.5": 0.43452997369888496,
+        "0.8": 3.1334399018783645,
+        "1.2": 6.7225199341515625
+      }
+    },
+    {
+      "name": "n9_d+5",
+      "ncrit": 9.0,
+      "flap": 5,
+      "seed_alphas": {
+        "0.5": -1.3115354492216993,
+        "0.8": 1.1588697925124154,
+        "1.2": 4.885413167838581
+      }
+    },
+    {
+      "name": "n9_d+10",
+      "ncrit": 9.0,
+      "flap": 10,
+      "seed_alphas": {
+        "0.5": -3.0116408449952456,
+        "0.8": -0.4910848450177241,
+        "1.2": 3.151663399412994
+      }
+    }
+  ],
+  "reynolds": 700000.0,
+  "mach": 0.07,
+  "panels": [
+    260,
+    180
+  ],
+  "wake_length": 1.0,
+  "cl_tolerance": 2e-05,
+  "residual_tolerance": 1e-07,
+  "iterations": 100,
+  "reuse_legacy": false,
+  "protocol": "Common Ncrit, ascending CL continuation; local brackets with recorded retries",
+  "selection_protocol": "Equal-point MAPE; complete coverage required; leave-one-flap-out selection",
+  "qualification": "Calibration and transfer study; no contour-gradient validation claim",
+  "sha256": {
+    "multifoil.py": "e49d6d2917f6287acdab2a05e172abb11a8a68f2cb20494371130475dbbc227c",
+    "viscous.py": "3a306512cfa885613c3c65038cf42f2cd3692fbbba8d373bfd9527df057c2584",
+    "paneling.py": "f2afcfe50fd550b5c5041b70905277c68a5f3afb16a0a93dacc74696ce62596f",
+    "optimization.py": "5c569fa152dd6ece53e0cd9a8db8b7cbfcdf3892ad6b89beff17e4d1ee88cf07",
+    "vendor/mfoil.py": "c9473e895a7256990c07630eb8bcc7b8310bf3dcb3cc6f62aab2e1bf61acc651",
+    "validation/s702_geometry.py": "bb45d9a87464bf3f3aa5054263fa32ce1d23c7088eb077c339f5de6e50b5ae8d",
+    "validation/s702_benchmark.py": "a4f1160cc31efa3eb3823b5c3425a82e6b947329dcf82d0ed6d839ecfee2ad26",
+    "validation/s702_transition_study.py": "75cb5dceb51e1e9b157170f5e0d25418e57d352969bfe8a91b89f54ef6365976",
+    "validation/s702_ncrit_sweep.py": "8bee1b40b294254ef8849ef88160a5b9d92779b2c7ea6b9402a4c3f742b1ab68",
+    "validation/data/s702/source.json": "6de0d954b42c4b88c81beb7a7362ce822c27d47f4f68a4c1b7068c05b66dd073",
+    "validation/data/s702/fore.dat": "e1633c81220313ca493bce4bdf0ae5f274056ee8c1b0e6b03b484c58e4402dd7",
+    "validation/data/s702/aft_d0.dat": "71ae3d8bb58249bd17d94de3412b572e3c1e0f3bbc656e4726fc61a8fe709fe8",
+    "validation/data/s702/aft_d5.dat": "c77e561e10375aa4d3476087e246f780b37ddaacbb8e1b59dd013a606f802bf1",
+    "validation/data/s702/aft_d10.dat": "bab79d830ebc641bfcc5f4d6c6eb541db6b04321f4fdcfda0386165164e9b76d",
+    "validation/results/s702_fixed/d+0__base/result.json": "dbddc349de0c798c410f01eaf38cd2f42b6ac8480f22b294e6303dbb9e507979",
+    "validation/results/s702_fixed/d+10__base/result.json": "892b5fb67a81d4937efbb5c023ae937141ea9f842a14dbfe0826c4e88a945b35",
+    "validation/results/s702_fixed/d+5__base/result.json": "2d6536c817957134f86f652c87bbdd238cf699adbf3474bd5290b78ef7066bf8",
+    "validation/results/s702_fixed/d-2__base/result.json": "b47115308f63e5385cf43a5f576fb5fc30a815a40637a5f13c58e2255cf9eb92",
+    "validation/results/s702_transition_diagnostic/d+0_cl0.5_both/result.json": "8a6aa0eade39172a1109c814d714bf90156c82382d5c404ce8972049a76af15b",
+    "validation/results/s702_transition_diagnostic/d+0_cl0.8_both/result.json": "2598c71be97de11f6a90bf01940f202b512b0b7cdf34b0fc112a9d5aebc8beb8",
+    "validation/results/s702_transition_diagnostic/d+0_cl1.2_both/result.json": "f22083f847299129156f9037ce749cbe60847e3d89598f83a32233aac4b5ea03",
+    "validation/results/s702_transition_diagnostic/d+10_cl0.5_both/result.json": "63d325575967fa2db897c4c4f527e7d4bf4a8769900cef8528fc0d76de2cd654",
+    "validation/results/s702_transition_diagnostic/d+10_cl0.8_aft/result.json": "97c2c0abf275a6d74f08116bd5d10d7c49c78ccced2bc1faf470224a34645d07",
+    "validation/results/s702_transition_diagnostic/d+10_cl0.8_both/result.json": "02eec20d65d864a5b990d9f47ce99f1ec262e4a6e2f94e7f4fb8a30e0fcc3e39",
+    "validation/results/s702_transition_diagnostic/d+10_cl0.8_fore/result.json": "b1b9489f97bea9dc6f19f6ed3d1a7b9f0447694198999b80f276ee882262e555",
+    "validation/results/s702_transition_diagnostic/d+10_cl1.2_both/result.json": "d373cb606da63e68bb3d4300adc8cb48d65fcc4b2017aee08187241a75e46656",
+    "validation/results/s702_transition_diagnostic/d+5_cl0.5_both/result.json": "982a5693aa1d82b1a647fc19542e11107648be7ccc4bd422e7dfc7b00649babd",
+    "validation/results/s702_transition_diagnostic/d+5_cl0.8_aft/result.json": "58d2a6fffcdc86ecbc0570492f57f426a8f14c1ba1ae9bb177c99ebc80270267",
+    "validation/results/s702_transition_diagnostic/d+5_cl0.8_both/result.json": "ef36beecb1906479fc821bf134122504ed2ecc5f6e37fed48e04c28c30aa1e83",
+    "validation/results/s702_transition_diagnostic/d+5_cl0.8_fore/result.json": "686e4db34fca47a94a0acc11fa7ff3b858ec27bd523c28059ce174683f984390",
+    "validation/results/s702_transition_diagnostic/d+5_cl1.2_both/result.json": "b9ed650a0f7013e32361182d6de1a61726ede74651376d1ba74ed7f76c426d39",
+    "validation/results/s702_transition_diagnostic/d-2_cl0.5_both/result.json": "145591945c845e4924884699122bc533e7c05f04f145c28a8f210891d070e269",
+    "validation/results/s702_transition_diagnostic/d-2_cl0.8_both/result.json": "0fa52d6523d15c383e62885ced4705cdcb272d20db9eccfa706a8215505af9d9",
+    "validation/results/s702_transition_diagnostic/d-2_cl1.2_both/result.json": "d0206911a16582cb9cc6458428a60b5f231551427d4c93ebced9e15616167d8a"
+  }
+}

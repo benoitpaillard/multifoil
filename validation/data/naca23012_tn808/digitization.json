@@ -1,0 +1,95 @@
+{
+  "source": "NACA TN808 Figure8, PDF18",
+  "reference_kind": "experiment",
+  "image": "tn808_fig8_drag.png",
+  "image_sha256": "bdea75d393eec350661138ab4055252675c23bc8d4bf8f9456708812c6111a01",
+  "calibration": [
+    [
+      835.0,
+      1233.5,
+      1.2,
+      0.02
+    ],
+    [
+      1033.0,
+      1232.5,
+      1.6,
+      0.02
+    ],
+    [
+      834.0,
+      1040.0,
+      1.2,
+      0.06
+    ],
+    [
+      1032.0,
+      1039.0,
+      1.6,
+      0.06
+    ]
+  ],
+  "affine_pixel_to_cl_cd": [
+    [
+      0.002020149292686705,
+      -1.0440048023977435e-06
+    ],
+    [
+      -1.0440048024187778e-05,
+      -0.00020671295087959426
+    ],
+    [
+      -0.4739468601555564,
+      0.2758521689199771
+    ]
+  ],
+  "marker_clicks": {
+    "10": [
+      [
+        896.0,
+        1181.0
+      ],
+      [
+        1010.0,
+        1152.0
+      ],
+      [
+        1121.0,
+        1111.0
+      ]
+    ],
+    "20": [
+      [
+        833.0,
+        1203.0
+      ],
+      [
+        959.0,
+        1177.0
+      ],
+      [
+        1069.0,
+        1150.0
+      ]
+    ],
+    "30": [
+      [
+        840.0,
+        1159.0
+      ],
+      [
+        953.0,
+        1131.0
+      ],
+      [
+        1057.0,
+        1107.0
+      ]
+    ]
+  },
+  "target_cl": 1.5,
+  "interpolation": "linear between recorded bounding markers; no extrapolation",
+  "source_precision": "CD limits: minimum \u00b10.0003, CL1 \u00b10.0006, CL2.5 \u00b10.002. No value stated at CL1.5.",
+  "allowance_qualification": "Use \u00b10.002 at CL1.5 as a conservative working assumption, plus \u00b10.0012 for approximately3-pixel clicks, calibration, lift mapping and interpolation. These are comparison allowances, not a measured total-uncertainty bound or confidence interval. Unknown configuration-dependent fitting bias is not bounded.",
+  "extraction_code_sha256": "58093bd3ba6a3f0190d4ed296a465717a7990b2e1cbf0a1cdff6b2cf152888a7"
+}

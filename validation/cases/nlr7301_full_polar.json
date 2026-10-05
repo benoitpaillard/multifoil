@@ -1,0 +1,43 @@
+{
+  "description": "NLR7301 two-element, nominal ECARP 2.6% gap geometry, 20-degree flap, Re2.51e6 Mach0.185. Natural transition, Ncrit9 assumed. Reference lift/drag digitized in Ranneberg viiflow examples from van den Berg and Oskam; digitized alpha kept exactly. No angle or geometry fit. Full digitized polar, including abrupt experimental lift loss; optional expensive stress case.",
+  "reference_chord": 1.0,
+  "reynolds": 2510000,
+  "mach": 0.185,
+  "ncrit": 9,
+  "iterations": 100,
+  "start_alpha": 0,
+  "alpha_deg": [
+    -0.00564316903733,
+    1.03419513246526,
+    1.96982773563321,
+    2.9682827975287,
+    3.98730889869276,
+    4.98571572837426,
+    5.94254638959269,
+    5.99082541593338,
+    7.06611581458934,
+    8.10643643823187,
+    9.06336356387829,
+    10.0829684516103,
+    10.1382630921059,
+    11.1029109648402,
+    12.1021377421596,
+    13.0971156420388,
+    13.101605680549,
+    14.1435661994673,
+    15.0882905749732,
+    16.1123810586067
+  ],
+  "elements": [
+    {
+      "name": "main",
+      "file": "../data/nlr7301/NLR7301MainECARP.dat",
+      "panels": 260
+    },
+    {
+      "name": "flap",
+      "file": "../data/nlr7301/NLR7301FlapECARP.dat",
+      "panels": 180
+    }
+  ]
+}

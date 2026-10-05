@@ -1,0 +1,27 @@
+VISCOUS: coupled mfoil boundary layers, natural transition and limited separation; independent wakes.
+alpha= -0.010 CL=      nan CD=nan CM=      nan converged=False
+  Newton iteration limit reached
+alpha=  0.000 CL=  0.15157 CD=0.006631 CM= -0.04527 converged=True
+alpha=  2.050 CL=  0.39912 CD=0.006667 CM= -0.05113 converged=True
+alpha=  4.000 CL=  0.63388 CD=0.006541 CM= -0.05636 converged=True
+alpha=  4.100 CL=  0.64590 CD=0.006534 CM= -0.05662 converged=True
+alpha=  6.000 CL=  0.83521 CD=0.009821 CM= -0.05594 converged=True
+alpha=  6.160 CL=      nan CD=nan CM=      nan converged=False
+  Continuation failed at 6.16 deg: Newton iteration limit reached
+alpha=  8.000 CL=  1.01440 CD=0.013654 CM= -0.05235 converged=True
+alpha=  8.200 CL=  1.03103 CD=0.014030 CM= -0.05181 converged=True
+alpha=  9.220 CL=  1.10691 CD=0.015927 CM= -0.04763 converged=True
+alpha= 10.000 CL=  1.16002 CD=0.017848 CM= -0.04460 converged=True
+alpha= 10.210 CL=  1.17343 CD=0.018458 CM= -0.04388 converged=True
+alpha= 11.210 CL=  1.23165 CD=0.022362 CM= -0.04138 converged=True
+alpha= 12.000 CL=  1.27138 CD=0.026557 CM= -0.04022 converged=True
+alpha= 12.220 CL=  1.28063 CD=0.027906 CM= -0.03986 converged=True
+alpha= 13.240 CL=  1.31123 CD=0.035150 CM= -0.03764 converged=True
+alpha= 14.240 CL=  1.34353 CD=0.042053 CM= -0.03604 converged=True
+alpha= 15.000 CL=  1.36251 CD=0.048055 CM= -0.03506 converged=True
+alpha= 15.240 CL=  1.36779 CD=0.050109 CM= -0.03487 converged=True
+alpha= 16.240 CL=  1.38421 CD=0.059619 CM= -0.03455 converged=True
+alpha= 18.200 CL=  1.38260 CD=0.084532 CM= -0.03730 converged=True
+alpha= 20.150 CL=  1.31402 CD=0.122953 CM= -0.04792 converged=True
+Stall diagnostic: peak_bracketed (see stall.json; failure is not stall)
+Saved /workspace/scratch/786202b76db3/multifoil/validation/results/s809_somers in 185.97 s

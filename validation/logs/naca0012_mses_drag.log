@@ -1,0 +1,9 @@
+naca0012_mses_drag: alpha=0, CL=6.10327e-13, CD=0.00516935, converged=True
+naca0012_mses_drag: alpha=4, CL=0.473222, CD=0.00613333, converged=True
+naca0012_mses_drag: alpha=8, CL=0.940212, CD=0.00852414, converged=True
+naca0012_mses_drag: alpha=10, CL=1.20563, CD=0.010875, converged=True
+naca0012_mses_drag: alpha=12, CL=1.41371, CD=0.0139985, converged=True
+naca0012_mses_drag: alpha=14, CL=1.58005, CD=0.0194505, converged=True
+naca0012_mses_drag: alpha=16, CL=1.62395, CD=0.0346846, converged=True
+naca0012_mses_drag: alpha=18, CL=1.44372, CD=0.0866374, converged=True
+Saved /workspace/scratch/786202b76db3/multifoil/validation/results/REPORT.md; comparison complete=True; no accuracy pass implied.

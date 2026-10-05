@@ -1,0 +1,814 @@
+{
+  "schema_version": 1,
+  "handover_date": "2026-09-21",
+  "aerodynamic_findings_through": "2026-09-09",
+  "objective": "Reliable incompressible multi-element shape optimization using a reproducible open solver",
+  "current_decision": "Research/design screening only; no independently validated contour optimum accepted",
+  "this_update": {
+    "numerical_core_changed": false,
+    "adds": [
+      "Retrieved and audited the original 19-target repeatability matrix, including 24 selected states",
+      "Opt-in reusable fixed-lift initialization policy and 13 new fast tests",
+      "Baseline failure reproduced exactly and preserved; seven S702 policy jobs launched after verified continuation and 38 passing pinned fast tests; live status monitor added"
+    ],
+    "new_study_planned_targets": 7,
+    "new_study_results_reviewed": false
+  },
+  "default_ncrit": 9.0,
+  "selected_effective_s702_ncrit": 6.25,
+  "calibration": {
+    "reynolds": 1000000,
+    "mach": 0.1,
+    "flaps_deg": [
+      -2,
+      0,
+      5,
+      10
+    ],
+    "targets_cl": [
+      0.5,
+      0.8,
+      1.2
+    ],
+    "fore_aft_panels": [
+      260,
+      180
+    ],
+    "candidates": [
+      3.0,
+      4.0,
+      5.0,
+      5.5,
+      5.75,
+      6.0,
+      6.25,
+      6.5,
+      7.0,
+      8.0,
+      9.0,
+      10.0,
+      11.0,
+      12.0
+    ],
+    "entries": 168,
+    "converged_entries": 165,
+    "reused_entries": 24,
+    "recorded_new_requested_evaluations": 649,
+    "failed_requested_evaluations": 11,
+    "score_by_ncrit": [
+      {
+        "ncrit": 3.0,
+        "complete": false,
+        "evaluated": 11,
+        "required": 12,
+        "mape_percent": null,
+        "rmse_counts": null,
+        "maximum_error_percent": null,
+        "minimum_possible_mape_percent": 17.750438576219096,
+        "pairwise_delta_rmse_counts": null,
+        "matching_pair_signs": null,
+        "pair_comparisons": 15
+      },
+      {
+        "ncrit": 4.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 13.345959277946557,
+        "rmse_counts": 14.581567037574478,
+        "maximum_error_percent": 44.635554625711585,
+        "minimum_possible_mape_percent": 13.345959277946557,
+        "pairwise_delta_rmse_counts": 16.883527146644642,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 5.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 8.780955658098481,
+        "rmse_counts": 9.96442864087293,
+        "maximum_error_percent": 28.018070850076178,
+        "minimum_possible_mape_percent": 8.780955658098481,
+        "pairwise_delta_rmse_counts": 11.15158787754139,
+        "matching_pair_signs": 17,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 5.5,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 6.282863415290331,
+        "rmse_counts": 7.831241435884881,
+        "maximum_error_percent": 16.57296117836792,
+        "minimum_possible_mape_percent": 6.282863415290332,
+        "pairwise_delta_rmse_counts": 7.666966027756186,
+        "matching_pair_signs": 17,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 5.75,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 5.465102637462906,
+        "rmse_counts": 7.296699407172541,
+        "maximum_error_percent": 12.280943152734395,
+        "minimum_possible_mape_percent": 5.465102637462908,
+        "pairwise_delta_rmse_counts": 6.51838891192675,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 6.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 4.946357438639614,
+        "rmse_counts": 6.977972335050364,
+        "maximum_error_percent": 8.50684307815787,
+        "minimum_possible_mape_percent": 4.946357438639613,
+        "pairwise_delta_rmse_counts": 5.680858578520078,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 6.25,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 4.845848209909896,
+        "rmse_counts": 6.998677270110779,
+        "maximum_error_percent": 8.448486616106424,
+        "minimum_possible_mape_percent": 4.845848209909896,
+        "pairwise_delta_rmse_counts": 5.819641460601205,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 6.5,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 5.054247868860475,
+        "rmse_counts": 7.193447591885497,
+        "maximum_error_percent": 8.479010010778868,
+        "minimum_possible_mape_percent": 5.054247868860476,
+        "pairwise_delta_rmse_counts": 6.068446557745135,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 7.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 5.456088213614726,
+        "rmse_counts": 7.705572812373236,
+        "maximum_error_percent": 9.252410024302572,
+        "minimum_possible_mape_percent": 5.456088213614726,
+        "pairwise_delta_rmse_counts": 6.999099811990195,
+        "matching_pair_signs": 15,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 8.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 7.081393431522357,
+        "rmse_counts": 9.655925143867103,
+        "maximum_error_percent": 19.934492859159175,
+        "minimum_possible_mape_percent": 7.081393431522357,
+        "pairwise_delta_rmse_counts": 10.3922308243161,
+        "matching_pair_signs": 15,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 9.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 8.835538433194516,
+        "rmse_counts": 12.128579743422051,
+        "maximum_error_percent": 30.39431552397902,
+        "minimum_possible_mape_percent": 8.83553843319452,
+        "pairwise_delta_rmse_counts": 14.193641868247571,
+        "matching_pair_signs": 13,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 10.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 10.474246309864709,
+        "rmse_counts": 13.132342660707295,
+        "maximum_error_percent": 31.06231924961504,
+        "minimum_possible_mape_percent": 10.474246309864705,
+        "pairwise_delta_rmse_counts": 16.16533184911935,
+        "matching_pair_signs": 14,
+        "pair_comparisons": 18
+      },
+      {
+        "ncrit": 11.0,
+        "complete": false,
+        "evaluated": 11,
+        "required": 12,
+        "mape_percent": null,
+        "rmse_counts": null,
+        "maximum_error_percent": null,
+        "minimum_possible_mape_percent": 9.82358901049873,
+        "pairwise_delta_rmse_counts": null,
+        "matching_pair_signs": null,
+        "pair_comparisons": 15
+      },
+      {
+        "ncrit": 12.0,
+        "complete": false,
+        "evaluated": 11,
+        "required": 12,
+        "mape_percent": null,
+        "rmse_counts": null,
+        "maximum_error_percent": null,
+        "minimum_possible_mape_percent": 12.103398088474796,
+        "pairwise_delta_rmse_counts": null,
+        "matching_pair_signs": null,
+        "pair_comparisons": 15
+      }
+    ],
+    "metric_optima": {
+      "mape_percent": {
+        "ncrit": 6.25,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 4.845848209909896,
+        "rmse_counts": 6.998677270110779,
+        "maximum_error_percent": 8.448486616106424,
+        "minimum_possible_mape_percent": 4.845848209909896,
+        "pairwise_delta_rmse_counts": 5.819641460601205,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      },
+      "rmse_counts": {
+        "ncrit": 6.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 4.946357438639614,
+        "rmse_counts": 6.977972335050364,
+        "maximum_error_percent": 8.50684307815787,
+        "minimum_possible_mape_percent": 4.946357438639613,
+        "pairwise_delta_rmse_counts": 5.680858578520078,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      },
+      "pairwise_delta_rmse_counts": {
+        "ncrit": 6.0,
+        "complete": true,
+        "evaluated": 12,
+        "required": 12,
+        "mape_percent": 4.946357438639614,
+        "rmse_counts": 6.977972335050364,
+        "maximum_error_percent": 8.50684307815787,
+        "minimum_possible_mape_percent": 4.946357438639613,
+        "pairwise_delta_rmse_counts": 5.680858578520078,
+        "matching_pair_signs": 16,
+        "pair_comparisons": 18
+      }
+    },
+    "near_optimal_sampled_values": [
+      5.75,
+      6.0,
+      6.25,
+      6.5,
+      7.0
+    ],
+    "near_optimal_definition": "MAPE within 1 percentage point of best; engineering tolerance, not a confidence interval",
+    "cross_validated_score": {
+      "complete": true,
+      "evaluated": 12,
+      "required": 12,
+      "mape_percent": 5.631725510032859,
+      "rmse_counts": 7.570762837382899,
+      "maximum_error_percent": 9.252410024302572,
+      "minimum_possible_mape_percent": 5.631725510032859
+    },
+    "cross_validation_is_blind": false
+  },
+  "reserved": {
+    "reynolds": 700000,
+    "mach": 0.07,
+    "flaps_deg": [
+      0,
+      5,
+      10
+    ],
+    "targets_cl": [
+      0.5,
+      0.8,
+      1.2
+    ],
+    "original_selected_coverage": {
+      "converged": 7,
+      "required": 9
+    },
+    "after_local_retries": {
+      "qualification": "Separate numerical follow-up with frozen Ncrit and physics; all original failures retained",
+      "selection_rule": "First successful initialization in the supplied order; reproduction uses cold then warm; no drag-based selection",
+      "retries": [
+        {
+          "ncrit": 6.25,
+          "flap": 10,
+          "target_cl": 0.5,
+          "feasible": true,
+          "reused": false,
+          "CL": 0.49999336877755163,
+          "CD": 0.009268476897426306,
+          "alpha_deg": -2.7787026428894146,
+          "CD_experiment": 0.009482275910120706,
+          "CD_mses_n9": 0.010349992348862755,
+          "reference_conditions_matched": true,
+          "error_counts": -2.1379901269439996,
+          "error_percent": -2.2547225446815533,
+          "result_path": "validation/results/s702_ncrit_holdout_local_cl05/n6p25_d+10/cl0p5/result.json",
+          "local_retry_of": "validation/results/s702_ncrit_holdout_selected/n6p25_d+10/cl0p5/result.json",
+          "initialization": "cold local seed",
+          "selected_for_score": true
+        },
+        {
+          "ncrit": 6.25,
+          "flap": 10,
+          "target_cl": 0.8,
+          "feasible": false,
+          "reused": false,
+          "CL": null,
+          "CD": null,
+          "alpha_deg": null,
+          "CD_experiment": 0.008082490895615827,
+          "CD_mses_n9": 0.009974884775094194,
+          "reference_conditions_matched": true,
+          "error_counts": null,
+          "error_percent": null,
+          "result_path": "validation/results/s702_ncrit_holdout_local_cl08/n6p25_d+10/cl0p8/result.json",
+          "local_retry_of": "validation/results/s702_ncrit_holdout_selected/n6p25_d+10/cl0p8/result.json",
+          "initialization": "cold local seed",
+          "selected_for_score": false
+        },
+        {
+          "ncrit": 6.25,
+          "flap": 10,
+          "target_cl": 0.8,
+          "feasible": true,
+          "reused": false,
+          "CL": 0.8000046700741084,
+          "CD": 0.010025724302107302,
+          "alpha_deg": -0.16617446273209213,
+          "CD_experiment": 0.008082490895615827,
+          "CD_mses_n9": 0.009974884775094194,
+          "reference_conditions_matched": true,
+          "error_counts": 19.43233406491475,
+          "error_percent": 24.042506593425795,
+          "result_path": "validation/results/s702_ncrit_holdout_warm_cl08/n6p25_d+10/cl0p8/result.json",
+          "local_retry_of": "validation/results/s702_ncrit_holdout_selected/n6p25_d+10/cl0p8/result.json",
+          "initialization": "warm replay",
+          "selected_for_score": true
+        }
+      ],
+      "scores": [
+        {
+          "ncrit": 9.0,
+          "complete": true,
+          "evaluated": 9,
+          "required": 9,
+          "mape_percent": 10.148528702636888,
+          "rmse_counts": 11.681458649273528,
+          "maximum_error_percent": 25.88172872838768,
+          "minimum_possible_mape_percent": 10.148528702636888
+        },
+        {
+          "ncrit": 6.25,
+          "complete": true,
+          "evaluated": 9,
+          "required": 9,
+          "mape_percent": 5.695551659063683,
+          "rmse_counts": 8.54156645798874,
+          "maximum_error_percent": 24.0425065934258,
+          "minimum_possible_mape_percent": 5.695551659063678
+        }
+      ]
+    },
+    "published_mses_n9_score": {
+      "complete": true,
+      "evaluated": 9,
+      "required": 9,
+      "mape_percent": 9.270576011389714,
+      "rmse_counts": 10.641320080224917,
+      "maximum_error_percent": 23.413498436538347,
+      "minimum_possible_mape_percent": 9.270576011389714
+    },
+    "qualification": "Ncrit frozen before reserved calculations; references already inspected but excluded from selection loss. Separate numerical initialization follow-up, without physics or tolerance changes."
+  },
+  "flap_10_minus_5_drag_counts": [
+    {
+      "dataset": "calibration",
+      "reynolds": 1000000.0,
+      "mach": 0.1,
+      "target_cl": 0.5,
+      "experiment_delta_10_minus_5_counts": 8.104965559674023,
+      "mses_n9_delta_10_minus_5_counts": 14.637592922037285,
+      "multifoil_n9_delta_10_minus_5_counts": 15.20443635770522,
+      "multifoil_n6p25_delta_10_minus_5_counts": 7.994528870132961
+    },
+    {
+      "dataset": "calibration",
+      "reynolds": 1000000.0,
+      "mach": 0.1,
+      "target_cl": 0.8,
+      "experiment_delta_10_minus_5_counts": -29.857765334078785,
+      "mses_n9_delta_10_minus_5_counts": 4.045340777735799,
+      "multifoil_n9_delta_10_minus_5_counts": 9.318357730773648,
+      "multifoil_n6p25_delta_10_minus_5_counts": -21.16841302842313
+    },
+    {
+      "dataset": "calibration",
+      "reynolds": 1000000.0,
+      "mach": 0.1,
+      "target_cl": 1.2,
+      "experiment_delta_10_minus_5_counts": -6.45497452133827,
+      "mses_n9_delta_10_minus_5_counts": 2.4878957789484755,
+      "multifoil_n9_delta_10_minus_5_counts": 2.9601943199293776,
+      "multifoil_n6p25_delta_10_minus_5_counts": 0.7391461160496591
+    },
+    {
+      "dataset": "reserved",
+      "reynolds": 700000.0,
+      "mach": 0.07,
+      "target_cl": 0.5,
+      "experiment_delta_10_minus_5_counts": 12.718703233689546,
+      "mses_n9_delta_10_minus_5_counts": 25.44714793844295,
+      "multifoil_n9_delta_10_minus_5_counts": 27.442010090829964,
+      "multifoil_n6p25_delta_10_minus_5_counts": 16.66357786819863
+    },
+    {
+      "dataset": "reserved",
+      "reynolds": 700000.0,
+      "mach": 0.07,
+      "target_cl": 0.8,
+      "experiment_delta_10_minus_5_counts": -20.723511875443272,
+      "mses_n9_delta_10_minus_5_counts": 12.651491097313196,
+      "multifoil_n9_delta_10_minus_5_counts": 15.167804567714667,
+      "multifoil_n6p25_delta_10_minus_5_counts": -1.341234186959233
+    },
+    {
+      "dataset": "reserved",
+      "reynolds": 700000.0,
+      "mach": 0.07,
+      "target_cl": 1.2,
+      "experiment_delta_10_minus_5_counts": -8.75843284680003,
+      "mses_n9_delta_10_minus_5_counts": 9.380567809720713,
+      "multifoil_n9_delta_10_minus_5_counts": 11.790904415247862,
+      "multifoil_n6p25_delta_10_minus_5_counts": 5.785409297985357
+    }
+  ],
+  "fine_panels": [
+    340,
+    240
+  ],
+  "mach_zero": {
+    "checks": [
+      {
+        "ncrit": 6.25,
+        "flap": 5,
+        "target_cl": 0.8,
+        "feasible": true,
+        "reused": false,
+        "CL": 0.7999972177801726,
+        "CD": 0.009840317315191614,
+        "alpha_deg": 1.3633789159654874,
+        "CD_experiment": 0.010179922063099877,
+        "CD_mses_n9": 0.007574867475965827,
+        "reference_conditions_matched": false,
+        "error_counts": null,
+        "error_percent": null,
+        "result_path": "validation/results/s702_ncrit_mach0_selected/n6p25_d+5/cl0p8/result.json",
+        "mach0_minus_mach01_counts": 0.024046531302869545
+      },
+      {
+        "ncrit": 6.25,
+        "flap": 10,
+        "target_cl": 0.8,
+        "feasible": true,
+        "reused": false,
+        "CL": 0.8000167727055327,
+        "CD": 0.007704185362191083,
+        "alpha_deg": -0.5024275579789383,
+        "CD_experiment": 0.0071941455296919985,
+        "CD_mses_n9": 0.007979401553739407,
+        "reference_conditions_matched": false,
+        "error_counts": null,
+        "error_percent": null,
+        "result_path": "validation/results/s702_ncrit_mach0_selected/n6p25_d+10/cl0p8/result.json",
+        "mach0_minus_mach01_counts": -0.16885997027930172
+      }
+    ],
+    "matched_experimental_validation": false
+  },
+  "pressure_comparison": {
+    "complete": true,
+    "ncrit": 6.25,
+    "errors": [
+      {
+        "source": "Published MSES N=9",
+        "element": "fore",
+        "side": "upper",
+        "samples": 36,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.13139456350734718
+      },
+      {
+        "source": "MultiFoil N=9",
+        "element": "fore",
+        "side": "upper",
+        "samples": 36,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.1437812298967292
+      },
+      {
+        "source": "MultiFoil N=6",
+        "element": "fore",
+        "side": "upper",
+        "samples": 36,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.1408521477436695
+      },
+      {
+        "source": "MultiFoil N=6.25 selected",
+        "element": "fore",
+        "side": "upper",
+        "samples": 36,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.141176378796581
+      },
+      {
+        "source": "Published MSES N=9",
+        "element": "aft",
+        "side": "upper",
+        "samples": 16,
+        "excluded_outside_overlap": 2,
+        "rms_chord_weighted": 0.09126811792023712
+      },
+      {
+        "source": "MultiFoil N=9",
+        "element": "aft",
+        "side": "upper",
+        "samples": 16,
+        "excluded_outside_overlap": 2,
+        "rms_chord_weighted": 0.07981692933011207
+      },
+      {
+        "source": "MultiFoil N=6",
+        "element": "aft",
+        "side": "upper",
+        "samples": 16,
+        "excluded_outside_overlap": 2,
+        "rms_chord_weighted": 0.06581429002606727
+      },
+      {
+        "source": "MultiFoil N=6.25 selected",
+        "element": "aft",
+        "side": "upper",
+        "samples": 16,
+        "excluded_outside_overlap": 2,
+        "rms_chord_weighted": 0.06594876475359328
+      },
+      {
+        "source": "Published MSES N=9",
+        "element": "fore",
+        "side": "lower",
+        "samples": 27,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.08404326409643006
+      },
+      {
+        "source": "MultiFoil N=9",
+        "element": "fore",
+        "side": "lower",
+        "samples": 27,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.07857920009737815
+      },
+      {
+        "source": "MultiFoil N=6",
+        "element": "fore",
+        "side": "lower",
+        "samples": 27,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.07830874731554352
+      },
+      {
+        "source": "MultiFoil N=6.25 selected",
+        "element": "fore",
+        "side": "lower",
+        "samples": 27,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.07830928107625026
+      },
+      {
+        "source": "Published MSES N=9",
+        "element": "aft",
+        "side": "lower",
+        "samples": 10,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.08363196240503819
+      },
+      {
+        "source": "MultiFoil N=9",
+        "element": "aft",
+        "side": "lower",
+        "samples": 10,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.09050370702033607
+      },
+      {
+        "source": "MultiFoil N=6",
+        "element": "aft",
+        "side": "lower",
+        "samples": 10,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.0897047310288882
+      },
+      {
+        "source": "MultiFoil N=6.25 selected",
+        "element": "aft",
+        "side": "lower",
+        "samples": 10,
+        "excluded_outside_overlap": 0,
+        "rms_chord_weighted": 0.08978568116669586
+      }
+    ]
+  },
+  "shape_trial": {
+    "case": "S702 incompressible fore camber",
+    "accepted_geometry": "baseline",
+    "best_mean_gain_counts_n9": 0.193834,
+    "best_mean_gain_counts_n6": 0.471402,
+    "required_gain_counts_in_each_scenario": 0.5,
+    "candidate_fine_flow_run_triggered": false,
+    "independent_contour_gradient_validation": false
+  },
+  "known_model_limits": [
+    "Natural e^N only; no forced trips or wake-induced bypass model",
+    "Separate non-merging wakes",
+    "Wakes follow global inviscid velocity; no viscous wake relaxation",
+    "No boundary-layer/wake confluence",
+    "Massive separation, dynamic stall and shocks outside demonstrated scope",
+    "S702 exact author geometry unavailable; figure reconstruction used"
+  ],
+  "development_priority_order": [
+    "Reusable and repeatable fixed-lift initialization",
+    "Geometry and transition-condition audit",
+    "Drag/wake mechanism-specific checks and justified extensions",
+    "Independent geometry-ranking and sensitivity validation",
+    "Expanded robust optimization and profiled performance; consider Optuna later"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "packages": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8",
+      "PyMuPDF": "1.26.6"
+    }
+  },
+  "numerical_core_sha256": {
+    "multifoil.py": "e49d6d2917f6287acdab2a05e172abb11a8a68f2cb20494371130475dbbc227c",
+    "viscous.py": "3a306512cfa885613c3c65038cf42f2cd3692fbbba8d373bfd9527df057c2584",
+    "paneling.py": "f2afcfe50fd550b5c5041b70905277c68a5f3afb16a0a93dacc74696ce62596f",
+    "optimization.py": "5c569fa152dd6ece53e0cd9a8db8b7cbfcdf3892ad6b89beff17e4d1ee88cf07",
+    "vendor/mfoil.py": "c9473e895a7256990c07630eb8bcc7b8310bf3dcb3cc6f62aab2e1bf61acc651"
+  },
+  "evidence_sha256": {
+    "validation/results/s702_ncrit_analysis/points.csv": "e2da75ca07aa6430c74521e3e554cefefa9caa92181f5ee08f2dfe207bd38b20",
+    "validation/results/s702_ncrit_analysis/summary.json": "2d74b2f35a36310e68fa3bc4252386ebae5f92a0de7acb3f6e1747734f360ad2",
+    "validation/results/s702_ncrit_analysis/transfer_summary.json": "84087a894cbbd7f7878c625adb91a464207a23b3d986e1f009b9c46c267b57d5",
+    "validation/results/s702_ncrit_analysis/frozen_selection.json": "80df6d4333a20e01cd8c61f03f7c85c0cde4c50586a05b9a9c6c8ff987d2bc3a",
+    "validation/results/s702_ncrit_analysis/holdout_points.csv": "96b719a4bb7b5d967463162d6f680567a6ae0e2cf3894fef69b91237e848ae49",
+    "validation/results/s702_ncrit_analysis/holdout_after_retries.csv": "071f1c595d6be2fbd3b7b95c403a5ae23eb673811a63d905a0ad7f941e98922a",
+    "validation/results/s702_ncrit_analysis/local_retry_points.csv": "9a87fa6186c3e48ff371507950970a84cd6546419858a8611729d8ec4e16b147",
+    "validation/results/s702_flap_effect/s702_flap_drag_data.csv": "aaf6a220d63d0d85202d90182e54f79e10fa37b78d67725672b592c3f2b475ac",
+    "validation/results/s702_flap_effect/s702_flap_5_to_10.csv": "017dd7e7e1397f119b958ace8d44d849cbceef39fd6e54a79cc8d566966d9dfc"
+  },
+  "primary_reference": {
+    "title": "Somers and Maughmer (2022), NASA/CR-20220014964",
+    "url": "https://ntrs.nasa.gov/citations/20220014964",
+    "local_pdf": "validation/data/s702/NASA-CR-20220014964.pdf",
+    "sha256": "01b8bb6fc9b4fb2bc3246611106d64f980c03c41b18dcd1740a59a769e66cf03"
+  },
+  "first_task": "Use python3 handover/policy_status.py --watch to observe the seven-job follow-up; retrieve and audit coverage/full selected states after completion before integrating into shape optimization.",
+  "tests_and_verification_receipt": "handover/verification.json",
+  "archived_diagnostics_through": "2026-09-15",
+  "completed_development_priorities": [
+    {
+      "priority": 1,
+      "completed_date": "2026-09-15",
+      "report": "validation/results/s702_drag_mechanism/FINDINGS.md"
+    }
+  ],
+  "drag_mechanism_diagnostic": {
+    "report": "validation/results/s702_drag_mechanism/FINDINGS.md",
+    "summary": "validation/results/s702_drag_mechanism/summary.json",
+    "script": "validation/report_s702_drag_mechanism.py",
+    "selected_states": 42,
+    "operating_conditions": 21,
+    "primary_states": 16,
+    "reproduced_comparison_rows": 6,
+    "all_selected_cd_equals_element_wake_sum": true,
+    "interpretation": "At calibrated CL=0.8 the fore-element benefit is partly or almost entirely offset by an aft-element penalty; surface associations do not assign the experimental error to an element.",
+    "report_environment": {
+      "python": "3.10.12",
+      "numpy": "2.2.6",
+      "scipy": "1.15.3",
+      "matplotlib": "3.10.8"
+    },
+    "next_task": "Use python3 handover/policy_status.py --watch to observe the seven-job follow-up; retrieve and audit coverage/full selected states after completion before integrating into shape optimization."
+  },
+  "drag_mechanism_verification_receipt": "handover/drag_mechanism_verification.json",
+  "repeatability_launch": {
+    "state": "completed_retrieved_and_audited",
+    "receipt": "handover/repeatability_launch.json",
+    "jobs": 11,
+    "fixed_lift_targets": 19,
+    "selected_server": "jony4",
+    "remote_job_launched": true,
+    "workers": 8,
+    "remote_root": "/home/jony/multifoil-runs/s702-repeatability-20260916",
+    "coordinator_pid": 15703,
+    "matrix_started_utc": "2026-09-16T12:38:39.434198+00:00",
+    "results_reviewed": true,
+    "latest_status_check": {
+      "checked_utc": "2026-09-16T22:12:41.650398+00:00",
+      "server": "jony4",
+      "tailscale_ssh": "Fresh unattended SSH verified after shared policy update",
+      "remote_job_status": "finished_with_numerical_failures",
+      "completed_jobs": 11,
+      "converged_targets": 18,
+      "required_targets": 19,
+      "observation": "handover/remote_status_observed_20260917.json",
+      "new_jobs_started": 0,
+      "results_reviewed": false
+    }
+  },
+  "repeatability_audit": {
+    "date": "2026-09-21",
+    "report": "validation/results/s702_repeatability_analysis/FINDINGS.md",
+    "summary": "validation/results/s702_repeatability_analysis/summary.json",
+    "coverage": {
+      "required": 19,
+      "converged": 18,
+      "first_attempts": 18,
+      "fully_covered_conditions": 5
+    },
+    "max_complete_CD_span_counts": 2.768403561947963e-07
+  },
+  "initialization_policy": {
+    "implementation": "fixed_lift_policy.py",
+    "status": "followup_running_with_classified_baseline_limitation",
+    "integrated_into_shape_optimization": false,
+    "protocol": "validation/S702_INITIALIZATION_POLICY_PROTOCOL.md",
+    "launch_receipt": "handover/policy_resume_launch_20260921.json",
+    "remote_root": "/home/jony/multifoil-runs/s702-policy-20260921",
+    "latest_launch_status": {
+      "phase": "running_study",
+      "exit_code": null,
+      "launcher_pid": 51503,
+      "hostname": "jony4",
+      "started_utc": "2026-09-21T15:06:46.388974+00:00",
+      "updated_utc": "2026-09-21T15:06:47.759519+00:00",
+      "known_baseline_failure": "test_multiple_elements_order_and_far_limit (test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit)"
+    },
+    "latest_study_status": {
+      "state": "running",
+      "updated_utc": "2026-09-21T15:08:17.883457+00:00",
+      "completed_jobs": 3,
+      "total_jobs": 7,
+      "last_completed_job": "policy_d10_cl1p2",
+      "last_job_success": true
+    },
+    "verification_receipt": "handover/policy_development_verification_20260921.json",
+    "new_s702_targets_started": 7,
+    "baseline_diagnostic": {
+      "launcher_pid": 47521,
+      "root": "/home/jony/multifoil-runs/s702-policy-20260921/handover/policy_runtime",
+      "receipt": "original_far_field.json",
+      "log": "original_far_field.log",
+      "status": "complete_identical_failure_reproduced",
+      "local_receipt": "handover/policy_runtime_20260921/original_far_field.json"
+    },
+    "monitor_command": "python3 handover/policy_status.py --watch",
+    "baseline_classification": "handover/policy_runtime_20260921/baseline_classification.json"
+  }
+}

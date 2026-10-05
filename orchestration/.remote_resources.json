@@ -1,0 +1,9 @@
+{
+  "claims": {
+    "/home/jony/multifoil/orchestration/runs/s414-nose-20261005-r3": {
+      "workers": 2,
+      "job_id": "s414-nose-resolution-20261005-r3-c7eb46bd29ad",
+      "reserved_utc": "2026-10-05T18:06:37.097035+00:00"
+    }
+  }
+}

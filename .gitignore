@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+validation/results/
+orchestration/runs/
+# third-party source documents/figures (copyright); keep extracted data only
+validation/data/**/*.pdf
+validation/data/**/*.png

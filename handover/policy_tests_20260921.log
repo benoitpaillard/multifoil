@@ -1,0 +1,45 @@
+/usr/local/lib/python3.10/dist-packages/matplotlib/projections/__init__.py:63: UserWarning: Unable to import Axes3D. This may be due to multiple versions of Matplotlib being installed (e.g. as a system package and as a pip package). As a result, the 3D projection is not available.
+  warnings.warn("Unable to import Axes3D. This may be due to multiple versions of "
+test_callback_failure_propagates_without_retry (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_failed_cold_flow_is_kept_before_warm_success (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_failed_policy_has_no_selected_solver_or_force (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_first_success_stops_without_trying_other_path (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_input_validation_precedes_any_solve (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_invalid_branch_cannot_recenter_or_succeed (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_seed_rejects_extrapolation_outside_domain (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_selected_left_endpoint_restores_entire_solver (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_unbracketed_pair_recenters_using_computed_lift (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_warm_seed_is_logged_but_cannot_be_selected_as_target (test_fixed_lift_policy.InitializationPolicyTests) ... ok
+test_original_physics_and_declared_budgets_are_preserved (test_s702_initialization_policy.PolicyMatrixTests) ... ok
+test_same_ordered_policy_on_every_primary_condition (test_s702_initialization_policy.PolicyMatrixTests) ... ok
+test_six_primary_conditions_and_separate_replay_control (test_s702_initialization_policy.PolicyMatrixTests) ... ok
+test_matrix_has_all_six_conditions_on_three_paths_and_one_warm_control (test_s702_repeatability.RepeatabilityTests) ... ok
+test_original_failed_targets_seed_from_computed_lift (test_s702_repeatability.RepeatabilityTests) ... ok
+test_prepare_rejects_changed_manifest_and_nonempty_unmanifested_output (test_s702_repeatability.RepeatabilityTests) ... ok
+test_warm_control_preserves_original_prefix_and_default_start (test_s702_repeatability.RepeatabilityTests) ... ok
+test_worker_passes_target_order_without_duplicate_output_keyword (test_s702_repeatability.RepeatabilityTests) ... ok
+test_budget_and_input (test_optimization.FixedLiftTests) ... ok
+test_camber_keeps_thickness_and_endpoints (test_optimization.FixedLiftTests) ... ok
+test_clearance_uses_segments (test_optimization.FixedLiftTests) ... ok
+test_failed_flow_cannot_be_an_objective (test_optimization.FixedLiftTests) ... ok
+test_no_extrapolation (test_optimization.FixedLiftTests) ... ok
+test_nonlinear_target_and_callback (test_optimization.FixedLiftTests) ... ok
+test_supersonic_cannot_be_an_objective (test_optimization.FixedLiftTests) ... ok
+test_drag_markers_match_independent_lift_curve (test_s702_sweep.HoldoutExtractionTests) ... ok
+test_pinned_source_and_export_hashes (test_s702_sweep.HoldoutExtractionTests) ... ok
+test_absolute_relative_errors_cannot_cancel (test_s702_sweep.SweepMetricsTests) ... ok
+test_duplicate_case_is_not_extra_weight (test_s702_sweep.SweepMetricsTests) ... ok
+test_heldout_error_does_not_choose_its_own_parameter (test_s702_sweep.SweepMetricsTests) ... ok
+test_local_retry_uses_model_lift_and_rejects_reversed_branch (test_s702_sweep.SweepMetricsTests) ... ok
+test_missing_difficult_case_cannot_win (test_s702_sweep.SweepMetricsTests) ... ok
+test_drag_markers_correspond_to_lift_measurement_sequence (test_s702.S702DataTests) ... ok
+test_hinge_and_deflection_preserve_upstream_elements (test_s702.S702DataTests) ... ok
+test_reference_calibration_matches_printed_maximum_lift (test_s702.S702DataTests) ... ok
+test_aft_upper_markers_match_subset_of_printed_taps (test_s702_pressure.S702PressureDataTests) ... ok
+test_caption_and_pressure_provenance (test_s702_pressure.S702PressureDataTests) ... ok
+test_fore_upper_taps_match_table_ii (test_s702_pressure.S702PressureDataTests) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 0.150s
+
+OK

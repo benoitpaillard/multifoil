@@ -1,0 +1,9 @@
+{
+  "launcher_pid": 14949,
+  "hostname": "jony4",
+  "started_utc": "2026-09-16T12:38:07.998969+00:00",
+  "workers": 8,
+  "root": "/home/jony/multifoil-runs/s702-repeatability-20260916",
+  "bootstrap_attempt": 2,
+  "python_requested": "3.12.13"
+}

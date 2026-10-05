@@ -1,0 +1,128 @@
+{
+  "source_url": "https://abcm.org.br/anais/cobem/2005/PDF/COBEM2005-0277.pdf",
+  "source_pdf_sha256": "5b1cd19231785a26c2c5fa6deb930ee710648af39471229e987a2879d9373d71",
+  "pdf_page_index": 4,
+  "source_figure": "Figure3, green experimental series attributed to Seifert and LaTunia (1999)",
+  "alpha_calibration_pt": [
+    [
+      210,
+      0
+    ],
+    [
+      375,
+      20
+    ]
+  ],
+  "cd_calibration_pt": [
+    [
+      260,
+      0
+    ],
+    [
+      109.25,
+      0.24
+    ]
+  ],
+  "curve_selection_rect_pt": [
+    205,
+    140,
+    365,
+    259
+  ],
+  "experiment_segments_pt": [
+    [
+      [
+        210.0,
+        256.25
+      ],
+      [
+        226.5,
+        256.25
+      ]
+    ],
+    [
+      [
+        226.5,
+        256.25
+      ],
+      [
+        243.0,
+        256.25
+      ]
+    ],
+    [
+      [
+        243.0,
+        256.25
+      ],
+      [
+        276.0,
+        254.0
+      ]
+    ],
+    [
+      [
+        276.0,
+        254.0
+      ],
+      [
+        292.5,
+        252.5
+      ]
+    ],
+    [
+      [
+        292.5,
+        252.5
+      ],
+      [
+        309.0,
+        250.25
+      ]
+    ],
+    [
+      [
+        309.0,
+        250.25
+      ],
+      [
+        325.5,
+        248.0
+      ]
+    ],
+    [
+      [
+        325.5,
+        248.0
+      ],
+      [
+        342.0,
+        159.5
+      ]
+    ],
+    [
+      [
+        342.0,
+        159.5
+      ],
+      [
+        358.5,
+        147.5
+      ]
+    ]
+  ],
+  "sampling_alpha_deg": [
+    0.0,
+    2.0,
+    4.0,
+    8.0,
+    10.0,
+    12.0,
+    14.0,
+    16.0,
+    18.0
+  ],
+  "cd_reading_allowance": 0.0012,
+  "alpha_reading_allowance_deg": 0.1,
+  "qualification": "Experimental data as reproduced in the COBEM2005 paper, not original raw measurements. Nominal Re6e6 and Mach0.3; original transition, exact geometry, tunnel corrections and test uncertainty not recovered. Reading allowances are not measurement error bars. Added for the three-way visual overlay, not a new scored validation case."
+}

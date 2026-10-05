@@ -1,0 +1,28 @@
+{
+  "classification": "Reproduced pre-existing far-field element-order failure",
+  "decision": "Proceed only with the declared S702 initialization experiment; retain failed test",
+  "failed_test": "test_multiple_elements_order_and_far_limit (test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit)",
+  "assertion": "AssertionError: 1.1415574480699853e-06 not less than 5e-07",
+  "preflight_passed": 45,
+  "preflight_total": 46,
+  "unchanged_core_and_test_sha256": {
+    "multifoil.py": "e49d6d2917f6287acdab2a05e172abb11a8a68f2cb20494371130475dbbc227c",
+    "viscous.py": "3a306512cfa885613c3c65038cf42f2cd3692fbbba8d373bfd9527df057c2584",
+    "optimization.py": "5c569fa152dd6ece53e0cd9a8db8b7cbfcdf3892ad6b89beff17e4d1ee88cf07",
+    "paneling.py": "f2afcfe50fd550b5c5041b70905277c68a5f3afb16a0a93dacc74696ce62596f",
+    "vendor/mfoil.py": "c9473e895a7256990c07630eb8bcc7b8310bf3dcb3cc6f62aab2e1bf61acc651",
+    "test_viscous.py": "5e04b9d97328986bb85011c92d695179ff96ccb1ed00b8b17bd41e9fdfb4973f"
+  },
+  "evidence_sha256": {
+    "preflight_attempt_001.log": "35ef618eb6e03b3cb7573d9ddfff25e22eb30706b6d1a9d4ab43dc18043ee433",
+    "original_far_field.log": "4dfa6027f6d5cfcd4dab93bdcaf3953e5693c0efdd3b7239d6b58dbd2cc0ff72",
+    "original_far_field.json": "07bd0a1fec1837f5a1f8a4c7852c4f1bc309655c7911f3ad14b39e290d770287"
+  },
+  "python": "3.12.13",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "scope": "No claim that the full physics suite passes; full-state S702 review remains required"
+}

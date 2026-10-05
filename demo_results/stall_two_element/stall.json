@@ -1,0 +1,13 @@
+{
+  "status": "not_bracketed",
+  "sampled_maximum": {
+    "alpha_deg": 12.0,
+    "CL": 2.6400415651054687
+  },
+  "peak_candidates": [],
+  "failed_angles_deg": [
+    14.0,
+    18.0
+  ],
+  "interpretation": "A sampled lift peak is a stall candidate, not a validated stall angle. Refine panels and alpha spacing. Numerical failure is not stall. The integral boundary-layer model does not resolve massive separation or unsteady post-stall flow."
+}

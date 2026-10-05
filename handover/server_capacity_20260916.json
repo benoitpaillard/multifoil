@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-09-16T12:38:07.692008+00:00",
+  "selected": "jony4",
+  "basis": "Idle newer-generation 3990X, ample RAM for eight single-threaded worker processes, and most free disk; no comparative flow benchmark performed.",
+  "servers": [
+    {
+      "name": "jony1",
+      "cpu": "AMD Ryzen Threadripper 1920X",
+      "physical_cores": 12,
+      "logical_cpus": 24,
+      "available_memory_gib_rounded": 61,
+      "free_disk_gib_rounded": 21,
+      "load_1_5_15": [
+        0.04,
+        0.01,
+        0.0
+      ],
+      "access": "Trusted existing SSH hop through jony3 to jony1.local"
+    },
+    {
+      "name": "jony3",
+      "cpu": "AMD Ryzen Threadripper 2990WX",
+      "physical_cores": 32,
+      "logical_cpus": 64,
+      "available_memory_gib_rounded": 123,
+      "free_disk_gib_rounded": 98,
+      "load_1_5_15": [
+        0.3,
+        0.27,
+        0.27
+      ],
+      "access": "Existing key-based LAN SSH 192.168.1.111 with configured host-key alias"
+    },
+    {
+      "name": "jony4",
+      "cpu": "AMD Ryzen Threadripper 3990X",
+      "physical_cores": 64,
+      "logical_cpus": 128,
+      "available_memory_gib_rounded": 29,
+      "free_disk_gib_rounded": 386,
+      "load_1_5_15": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "access": "Existing jony4 LAN SSH alias 192.168.1.125; strict host-key verification"
+    }
+  ],
+  "workers": 8,
+  "blas_openmp_threads_per_worker": 1
+}

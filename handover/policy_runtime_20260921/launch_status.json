@@ -1,0 +1,9 @@
+{
+  "phase": "running_study",
+  "exit_code": null,
+  "launcher_pid": 51503,
+  "hostname": "jony4",
+  "started_utc": "2026-09-21T15:06:46.388974+00:00",
+  "updated_utc": "2026-09-21T15:06:47.759519+00:00",
+  "known_baseline_failure": "test_multiple_elements_order_and_far_limit (test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit)"
+}

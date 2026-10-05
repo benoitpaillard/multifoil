@@ -1,0 +1,54 @@
+{
+  "source_url": "https://abcm.org.br/anais/cobem/2005/PDF/COBEM2005-0277.pdf",
+  "source_figure": "Figure3, printed/PDF page5, red MSES curve",
+  "source_pdf_sha256": "5b1cd19231785a26c2c5fa6deb930ee710648af39471229e987a2879d9373d71",
+  "pdf_page_index": 4,
+  "curve_selection_rect_pt": [
+    205,
+    190,
+    365,
+    259
+  ],
+  "alpha_calibration_pt": [
+    [
+      210,
+      0
+    ],
+    [
+      375,
+      20
+    ]
+  ],
+  "cd_calibration_pt": [
+    [
+      260,
+      0
+    ],
+    [
+      109.25,
+      0.24
+    ]
+  ],
+  "sampling_alpha_deg": [
+    0,
+    4,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18
+  ],
+  "cd_reading_allowance": 0.0012,
+  "alpha_reading_allowance_deg": 0.1,
+  "method": "Use all eight red polyline vertices, corresponding to visible MSES markers; no added interpolation points. PDF coordinate precision does not remove graphical quantization. Vertical allowance 0.75pt maps to about0.0012CD; retained as a reading allowance, not numerical accuracy.",
+  "figure_crop_pt": [
+    175,
+    87,
+    394,
+    280
+  ],
+  "render_scale": 4,
+  "vectors_sha256": "674769188fe92b73c3bf0101307001cbcf19b84d3d2ac89cb17936e2e607b096",
+  "figure_sha256": "3e3302a3b7978541e2a7bb834650b4fe635bf50f90af5d47fce5f9b6c0c8544b"
+}

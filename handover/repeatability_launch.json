@@ -1,0 +1,198 @@
+{
+  "date": "2026-09-16",
+  "state": "completed_retrieved_and_audited",
+  "user_authorization": "Choose the best of jony1, jony3 and jony4 and launch the repeatability study",
+  "selected_server": "jony4",
+  "remote_job_launched": true,
+  "jobs": 11,
+  "fixed_lift_targets": 19,
+  "prepare_command": "python3 validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --prepare-only",
+  "run_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+  "worker_count_note": "Eight workers confirmed active; one BLAS/OpenMP thread each. Hardware/load comparison is in handover/server_capacity_20260916.json.",
+  "required_environment": {
+    "python": "3.12",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.10.8"
+  },
+  "ssh_aliases": [
+    "jony1-anywhere",
+    "jony3-anywhere",
+    "jony4-anywhere"
+  ],
+  "tests": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -m unittest -v test_s702_repeatability test_optimization test_s702_sweep test_s702 test_s702_pressure",
+    "count": 25,
+    "status": "passed",
+    "new_driver_tests": 5,
+    "remote_status": "passed",
+    "remote_test_seconds": 0.075
+  },
+  "study_manifest": "validation/results/s702_repeatability_20260915/study.json",
+  "study_sha256": "b8248d34f040518483943295d56fc90ef3fe3369fecb443b630026789fa6adee",
+  "next_steps": [
+    "Review the separately launched common-policy follow-up; see handover/policy_launch_20260921.json."
+  ],
+  "user_reported_authentication_done": true,
+  "remote_root": "/home/jony/multifoil-runs/s702-repeatability-20260916",
+  "actual_runtime": {
+    "python": "3.12.13",
+    "hostname": "jony4",
+    "versions": {
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "matplotlib": "3.10.8"
+    },
+    "thread_limits": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "latest_launch_observation": {
+    "observed_utc": "2026-09-16T12:40:00.208798+00:00",
+    "launcher": {
+      "launcher_pid": 14949,
+      "hostname": "jony4",
+      "started_utc": "2026-09-16T12:38:07.998969+00:00",
+      "workers": 8,
+      "root": "/home/jony/multifoil-runs/s702-repeatability-20260916",
+      "bootstrap_attempt": 2,
+      "python_requested": "3.12.13"
+    },
+    "launch_status": {
+      "phase": "running_study",
+      "exit_code": 0,
+      "launcher_pid": 14949,
+      "hostname": "jony4",
+      "updated_utc": "2026-09-16T12:38:38.922778+00:00"
+    },
+    "study_status": {
+      "state": "running",
+      "updated_utc": "2026-09-16T12:39:45.657510+00:00",
+      "completed_jobs": 1,
+      "total_jobs": 11,
+      "last_completed_job": "cold_d5_cl0p5",
+      "last_job_success": true
+    },
+    "numerical_runtime": {
+      "python": "3.12.13",
+      "hostname": "jony4",
+      "versions": {
+        "numpy": "2.3.5",
+        "scipy": "1.17.0",
+        "matplotlib": "3.10.8"
+      },
+      "thread_limits": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1"
+      }
+    },
+    "active_processes": [
+      "15703   14949 Sl    0.6 111968 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15704   15703 R    99.7 120700 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15705   15703 R    99.7 206968 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15706   15703 R    99.7 247460 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15707   15703 R    99.7 272064 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15708   15703 R    99.7 275452 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15709   15703 R    99.7 209408 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15710   15703 R    99.7 183480 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8",
+      "15711   15703 R    99.7 171824 .venv/bin/python validation/run_s702_repeatability.py --out validation/results/s702_repeatability_20260915 --workers 8"
+    ],
+    "completed_target_files": 2,
+    "progress_files": 6
+  },
+  "coordinator_pid": 15703,
+  "launcher_pid": 14949,
+  "matrix_started_utc": "2026-09-16T12:38:39.434198+00:00",
+  "documentation": "handover/S702_REMOTE_RUN.md",
+  "selection_evidence": "handover/server_capacity_20260916.json",
+  "bootstrap_attempts": [
+    {
+      "attempt": 1,
+      "python_requested": "3.12.14",
+      "status": "setup_failed_no_flow_solves",
+      "reason": "uv catalogue has no 3.12.14 download",
+      "archive": "handover/remote_runtime/bootstrap_attempt_001/"
+    },
+    {
+      "attempt": 2,
+      "python_requested": "3.12.13",
+      "status": "study_started",
+      "exact_numerical_pins_retained": true
+    }
+  ],
+  "prior_access_tests": {
+    "tailscale": "All three aliases connect but demand browser authentication. Raw host aliases lack the documented host-key alias; use *-anywhere with strict checking.",
+    "lan": "192.168.1.101 / .111 / .125 all returned No route to host; .local names did not resolve."
+  },
+  "prior_connectivity_check": {
+    "utc": "2026-09-15T05:28:13.436485+00:00",
+    "local_tailscale_state": "Running",
+    "local_health": [],
+    "servers": [
+      {
+        "HostName": "jony3",
+        "Online": false,
+        "TailscaleIPs": [
+          "100.124.54.76",
+          "fd7a:115c:a1e0::f01:36d7"
+        ],
+        "LastSeen": "2026-09-15T03:40:22.1Z"
+      },
+      {
+        "HostName": "jony1",
+        "Online": false,
+        "TailscaleIPs": [
+          "100.64.182.106",
+          "fd7a:115c:a1e0::c401:b6da"
+        ],
+        "LastSeen": "2026-09-15T03:42:25.1Z"
+      },
+      {
+        "HostName": "jony4",
+        "Online": false,
+        "TailscaleIPs": [
+          "100.86.247.126",
+          "fd7a:115c:a1e0::c928:f77f"
+        ],
+        "LastSeen": "2026-09-15T03:40:14.1Z"
+      }
+    ],
+    "ssh": "All three *-anywhere aliases timed out before login.",
+    "tailscale_ping": "All three peers timed out without reply.",
+    "lan_ssh": "All three documented LAN addresses returned No route to host."
+  },
+  "latest_connectivity_check": {
+    "utc": "2026-09-16T22:12:41.650398+00:00",
+    "tailscale": "Fresh unattended SSH as jony verified on jony1, jony3 and jony4; root retains check mode.",
+    "receipt": "/home/jony/remoteConnection/state/tailscale-ssh-verification-20260917.json"
+  },
+  "latest_status_check": {
+    "checked_utc": "2026-09-16T22:12:41.650398+00:00",
+    "server": "jony4",
+    "tailscale_ssh": "Fresh unattended SSH verified after shared policy update",
+    "remote_job_status": "finished_with_numerical_failures",
+    "completed_jobs": 11,
+    "converged_targets": 18,
+    "required_targets": 19,
+    "observation": "handover/remote_status_observed_20260917.json",
+    "new_jobs_started": 0,
+    "results_reviewed": false
+  },
+  "prior_status_check": {
+    "checked_utc": "2026-09-16T19:04:57.238550+00:00",
+    "server": "jony4",
+    "tailscale_online": true,
+    "lan_ssh": "No route to host at configured 192.168.1.125",
+    "tailscale_ssh": "Requires a fresh browser authentication check",
+    "remote_job_status": "Not observable; do not infer still running or completed",
+    "last_verified_observation": "handover/remote_launch_observed_20260916.json",
+    "new_jobs_started": 0
+  },
+  "results_reviewed": true,
+  "review": "validation/results/s702_repeatability_analysis/FINDINGS.md"
+}

@@ -1,0 +1,162 @@
+{
+  "schema": 1,
+  "reference": "NASA/CR-20220014964",
+  "url": "https://ntrs.nasa.gov/api/citations/20220014964/downloads/NASA-CR-20220014964.pdf",
+  "pdf_sha256": "01b8bb6fc9b4fb2bc3246611106d64f980c03c41b18dcd1740a59a769e66cf03",
+  "reynolds": 700000.0,
+  "mach": 0.07,
+  "mses_ncrit": 9.0,
+  "transition": "free",
+  "flaps": [
+    0,
+    5,
+    10
+  ],
+  "targets": [
+    0.5,
+    0.8,
+    1.2
+  ],
+  "cases": [
+    {
+      "flap": 0,
+      "page": 84,
+      "figure": "23(b)",
+      "theory": [
+        224,
+        225,
+        226
+      ],
+      "markers": [
+        [
+          251,
+          297
+        ],
+        [
+          314,
+          380
+        ],
+        [
+          399,
+          465
+        ]
+      ],
+      "cl_zero_path": 41,
+      "cl_two_path": 37,
+      "reynolds": 700000.0,
+      "mach": 0.07,
+      "calibration": {
+        "cl_zero_pdf_x": 370.7659912109375,
+        "points_per_cl": 141.0074920654297,
+        "cd_zero_pdf_y": 628.8720092773438,
+        "points_per_cd": 14100.753784179688,
+        "alpha_zero_pdf_y": 276.35498046875,
+        "points_per_degree": 7.050374603271484
+      },
+      "caption": "78\n(b)  Rec \uf03d 0.70 \uf0b4 106  and  M \uf03d 0.07.\nFigure 23.- Continued.\n"
+    },
+    {
+      "flap": 5,
+      "page": 89,
+      "figure": "25(a)",
+      "theory": [
+        224,
+        225,
+        226
+      ],
+      "markers": [
+        [
+          251,
+          295
+        ],
+        [
+          313,
+          375
+        ],
+        [
+          392,
+          454
+        ]
+      ],
+      "cl_zero_path": 40,
+      "cl_two_path": 28,
+      "reynolds": 700000.0,
+      "mach": 0.07,
+      "calibration": {
+        "cl_zero_pdf_x": 441.4880065917969,
+        "points_per_cl": 134.21749877929688,
+        "cd_zero_pdf_y": 620.6790161132812,
+        "points_per_cd": 13421.749877929688,
+        "alpha_zero_pdf_y": 285.1369934082031,
+        "points_per_degree": 6.710874938964844
+      },
+      "caption": "83\n(a)  Rec \uf03d 0.70 \uf0b4 106  and  M \uf03d 0.07.\nFigure 25.- Comparison of theoretical and experimental section characteristics with  \uf064f \uf03d 5\uf0b0  and transition free.\n"
+    },
+    {
+      "flap": 10,
+      "page": 93,
+      "figure": "26(b)",
+      "theory": [
+        224,
+        225,
+        226
+      ],
+      "markers": [
+        [
+          251,
+          297
+        ],
+        [
+          315,
+          381
+        ],
+        [
+          401,
+          467
+        ]
+      ],
+      "cl_zero_path": 40,
+      "cl_two_path": 28,
+      "reynolds": 700000.0,
+      "mach": 0.07,
+      "calibration": {
+        "cl_zero_pdf_x": 441.4880065917969,
+        "points_per_cl": 134.21749877929688,
+        "cd_zero_pdf_y": 620.6790161132812,
+        "points_per_cd": 13421.749877929688,
+        "alpha_zero_pdf_y": 285.1369934082031,
+        "points_per_degree": 6.710874938964844
+      },
+      "caption": "87\n(b)  Rec \uf03d 0.70 \uf0b4 106  and  M \uf03d 0.07.\nFigure 26.- Continued.\n"
+    }
+  ],
+  "role": "Reserved Reynolds-number transfer check; not a parameter-fitting dataset",
+  "limitations": [
+    "No minus-two-degree flap case is published at this Reynolds number.",
+    "Vector-figure values; experimental and reconstruction uncertainties are not supplied.",
+    "Published MSES N=9 results; no new MSES runs."
+  ],
+  "sha256": {
+    "d+0/experiment_drag.csv": "230a1e4fde4c5fcaf43567fb8493d1c22c580889a85939351a60abe7450b9633",
+    "d+0/experiment_lift.csv": "c87ca365a5c793b7ee32b8aff415d904822f3e71f3606c834558f7e4739c91ca",
+    "d+0/experiment_moment.csv": "b6eee026ea278dc3d816917114b255c6657bbc4d486d28fdebff2a34acc005e6",
+    "d+0/mses_drag.csv": "c7967e934a488780a95d1ba9956d9cab4d7d33ee477e6fcaae07039d424caadd",
+    "d+0/mses_lift.csv": "44016e5eb2d96ba2991ce3ebb63c1806d86d9f5f44b0c5023e139a6950a22c5e",
+    "d+0/mses_moment.csv": "4b13420ddab37a8c6a6b2b21cdfaaf462f619c7a7e6f392bdc3d920b44eb81d4",
+    "d+0/source_page.png": "bc683cb7db84abd427b337eaa7b2da22995af4c1e99cbca6fbb2fd9779fbfbc8",
+    "d+10/experiment_drag.csv": "c10be117ff00123efd1a79eec917ddec9c421683d9a67aab555ae8d9c153fcde",
+    "d+10/experiment_lift.csv": "9527d1121f2af60f4430a31f03c37774b7630601e33148e64a82d7d3e8c61eb6",
+    "d+10/experiment_moment.csv": "e52fdfa9556cd28191e35e0afc192417b266dcaac872bf2cde0793a5014e78c9",
+    "d+10/mses_drag.csv": "da6b2a49570d495e16ae09311deb1cbae692d4d23c3ac124638a225a8d237cd8",
+    "d+10/mses_lift.csv": "b9112fac10cb33a2777918943d026193c4d40d9ca37368edb6b77b331d3408a8",
+    "d+10/mses_moment.csv": "a017b17934b2918655661f0e6f8a68b4b578050e804c1ab7f5d5001d6d92908b",
+    "d+10/source_page.png": "0f3984132e3b7bdc4df1a20b408391dff543c7413a87bdb02ff9ae660999798b",
+    "d+5/experiment_drag.csv": "404df672ba4001d359a8a413435aab0580895dccd7a843aaf4cc91bd97cea7a2",
+    "d+5/experiment_lift.csv": "8ff0e4d9c592d6baa300b45a79c4f1e8245e5d761700aff5a54a08dfd883f086",
+    "d+5/experiment_moment.csv": "e0dc146e994e6940d56cd319c16bd05132fbe2c8320ad10ecca975525b2205f3",
+    "d+5/mses_drag.csv": "d6bccf4ce90d20fe562e186044fa573c1e69ead2ef619ecc9e639fe0843b1989",
+    "d+5/mses_lift.csv": "541e27c66faafb86c69b855915a8772032d3234adde3125e58f4f54662afc7fc",
+    "d+5/mses_moment.csv": "c721bdc4de1595fc401aa83bd7de769eaade55de1914d33f2c21dcfb35310504",
+    "d+5/source_page.png": "1ae2224a53d6b8b6996de6033390872b391ba960b69a3aec700bfcd7c8c9b636"
+  }
+}

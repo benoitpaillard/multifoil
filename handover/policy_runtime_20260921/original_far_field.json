@@ -1,0 +1,21 @@
+{
+  "completed_utc": "2026-09-21T14:54:07.756685+00:00",
+  "command": [
+    "/home/jony/multifoil-runs/s702-repeatability-20260916/.venv/bin/python",
+    "-m",
+    "unittest",
+    "-v",
+    "test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit"
+  ],
+  "cwd": "/home/jony/multifoil-runs/s702-repeatability-20260916",
+  "exit_code": 1,
+  "log": "original_far_field.log",
+  "sha256": {
+    "multifoil.py": "e49d6d2917f6287acdab2a05e172abb11a8a68f2cb20494371130475dbbc227c",
+    "viscous.py": "3a306512cfa885613c3c65038cf42f2cd3692fbbba8d373bfd9527df057c2584",
+    "optimization.py": "5c569fa152dd6ece53e0cd9a8db8b7cbfcdf3892ad6b89beff17e4d1ee88cf07",
+    "paneling.py": "f2afcfe50fd550b5c5041b70905277c68a5f3afb16a0a93dacc74696ce62596f",
+    "vendor/mfoil.py": "c9473e895a7256990c07630eb8bcc7b8310bf3dcb3cc6f62aab2e1bf61acc651",
+    "test_viscous.py": "5e04b9d97328986bb85011c92d695179ff96ccb1ed00b8b17bd41e9fdfb4973f"
+  }
+}

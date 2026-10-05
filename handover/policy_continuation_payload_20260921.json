@@ -1,0 +1,9 @@
+{
+  "original_payload_sha256": "ec4762847f53ac3cddc09c95847ab7c2cc9298392c23b7ab763d4e82da52d858",
+  "prepared_study_sha256": "5388fef33ad7833c66b9d8db43da4c6304a54a4d50a4aae38f1da2a2d27219cb",
+  "sha256": {
+    "handover/resume_s702_policy.py": "d06c61f9135e10418d90834053f84b2b2b8401e12716e28d61a2089c5f39f6d8",
+    "handover/policy_status.py": "dfa9636f7f1a8c2187b170a36675ee280f029086fe95fe7d4c0f54119a91bc58",
+    "test_policy_operations.py": "8c1ac88567d2cf3e8fd58433fab00136703cba943b3d50c4e49be5b262c38cb4"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "description": "Published MSES NACA0012 drag, COBEM2005 Figure3. Re6e6 M0.3. Eight original plotted incidences. Ncrit9 and standard finite-TE coordinates assumed; original trips, grid and geometry file unspecified. No fit.",
+  "reference_chord": 1.0,
+  "reynolds": 6000000,
+  "mach": 0.3,
+  "ncrit": 9,
+  "iterations": 100,
+  "start_alpha": 0,
+  "alpha_deg": [
+    0,
+    4,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18
+  ],
+  "elements": [
+    {
+      "name": "main",
+      "file": "../data/naca0012/geometry.dat",
+      "panels": 260
+    }
+  ],
+  "benchmark": {
+    "reference_kind": "published_solver",
+    "reference_label": "Published MSES",
+    "reference_solver": "MSES",
+    "source_url": "https://abcm.org.br/anais/cobem/2005/PDF/COBEM2005-0277.pdf",
+    "source_figure": "Figure3, printed/PDF page5, red MSES curve",
+    "scope": "Single-element CD(alpha); no reference CL, transition or multi-element wake drag scored",
+    "notes": [
+      "Published graphical MSES results; MSES was not run here.",
+      "Re6e6 and Mach0.3 match the paper. Ncrit9 and standard finite-TE NACA0012 are assumptions; exact version, trips, geometry file and grid are unspecified.",
+      "Eight visible MSES point incidences, without extra curve interpolation or coefficient fitting.",
+      "CD reading allowance +/-0.0012 (12 drag counts); incidence +/-0.10degree. The plot cannot establish agreement to a few drag counts.",
+      "At high incidence, local supersonic flow can exceed the compressibility correction validity; inspect metadata diagnostics even when Newton converges.",
+      "This single-element drag check does not validate multi-element wake interaction."
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "description": "Ladson NASA TM-4074 Table I p.6, Re=5.97e6, M=0.15, free transition. Ncrit=9 assumed, unknown tunnel turbulence. Standard finite-TE NACA0012. No fitted angle offset.",
+  "reference_chord": 1.0,
+  "reynolds": 5970000,
+  "mach": 0.15,
+  "ncrit": 9,
+  "iterations": 100,
+  "alpha_deg": [
+    -4.05,
+    -2.0,
+    0.05,
+    1.98,
+    4.18,
+    6.2,
+    8.22,
+    10.18,
+    11.08,
+    12.25,
+    13.1,
+    14.28,
+    15.2,
+    16.18,
+    16.9,
+    17.35,
+    17.65,
+    18.65
+  ],
+  "elements": [
+    {
+      "name": "main",
+      "file": "../data/naca0012/geometry.dat",
+      "panels": 260
+    }
+  ]
+}

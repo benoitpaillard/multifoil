@@ -1,0 +1,4 @@
+VISCOUS: coupled mfoil boundary layers, natural transition and limited separation; independent wakes.
+alpha=  2.000 CL=  0.20931 CD=0.005949 CM=  0.00721 converged=True
+Stall diagnostic: not_bracketed (see stall.json; failure is not stall)
+Saved /workspace/scratch/786202b76db3/multifoil/demo_results/compressible_single in 20.87 s

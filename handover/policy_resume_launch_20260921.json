@@ -1,0 +1,82 @@
+{
+  "observed_utc": "2026-09-21T15:08:30.911459+00:00",
+  "launch": {
+    "phase": "running_study",
+    "exit_code": null,
+    "launcher_pid": 51503,
+    "hostname": "jony4",
+    "started_utc": "2026-09-21T15:06:46.388974+00:00",
+    "updated_utc": "2026-09-21T15:06:47.759519+00:00",
+    "known_baseline_failure": "test_multiple_elements_order_and_far_limit (test_viscous.ViscousPhysics.test_multiple_elements_order_and_far_limit)"
+  },
+  "launcher_alive": true,
+  "study": {
+    "state": "running",
+    "updated_utc": "2026-09-21T15:08:17.883457+00:00",
+    "completed_jobs": 3,
+    "total_jobs": 7,
+    "last_completed_job": "policy_d10_cl1p2",
+    "last_job_success": true
+  },
+  "summary": null,
+  "known_baseline_failure": true,
+  "jobs": [
+    {
+      "job": "policy_d5_cl0p5",
+      "status": "CONVERGED",
+      "evaluations": 3,
+      "failed_evaluations": 0,
+      "path": "cold_local",
+      "error": ""
+    },
+    {
+      "job": "policy_d5_cl0p8",
+      "status": "RUNNING",
+      "evaluations": 3,
+      "failed_evaluations": 0,
+      "path": "cold_local",
+      "error": ""
+    },
+    {
+      "job": "policy_d5_cl1p2",
+      "status": "CONVERGED",
+      "evaluations": 3,
+      "failed_evaluations": 0,
+      "path": "cold_local",
+      "error": ""
+    },
+    {
+      "job": "policy_d10_cl0p5",
+      "status": "RUNNING",
+      "evaluations": 0,
+      "failed_evaluations": 0,
+      "path": "",
+      "error": ""
+    },
+    {
+      "job": "policy_d10_cl0p8",
+      "status": "RUNNING",
+      "evaluations": 0,
+      "failed_evaluations": 0,
+      "path": "",
+      "error": ""
+    },
+    {
+      "job": "policy_d10_cl1p2",
+      "status": "CONVERGED",
+      "evaluations": 4,
+      "failed_evaluations": 0,
+      "path": "cold_local",
+      "error": ""
+    },
+    {
+      "job": "replay_control_d10_cl0p8",
+      "status": "RUNNING",
+      "evaluations": 4,
+      "failed_evaluations": 0,
+      "path": "archived_replay",
+      "error": ""
+    }
+  ],
+  "remote_root": "/home/jony/multifoil-runs/s702-policy-20260921"
+}

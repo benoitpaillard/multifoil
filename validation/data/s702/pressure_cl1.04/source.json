@@ -1,0 +1,52 @@
+{
+  "pdf_sha256": "01b8bb6fc9b4fb2bc3246611106d64f980c03c41b18dcd1740a59a769e66cf03",
+  "source_url": "https://ntrs.nasa.gov/api/citations/20220014964/downloads/NASA-CR-20220014964.pdf",
+  "pdf_page": 81,
+  "figure": "22(b)",
+  "flap": 0,
+  "reynolds": 1000000.0,
+  "mach": 0.1,
+  "target_cl": 1.04,
+  "target_lift_precision": "Two decimal places in the published caption",
+  "mses_ncrit": 9.0,
+  "transition": "free",
+  "calibration": {
+    "x0": 117.08399963378906,
+    "x1": 537.06396484375,
+    "cp0": 409.9909973144531,
+    "cp1": 514.9859008789062
+  },
+  "selectors": {
+    "fore_upper": [
+      69,
+      97,
+      167
+    ],
+    "fore_lower": [
+      70,
+      195,
+      251
+    ],
+    "aft_upper": [
+      71,
+      268,
+      302
+    ],
+    "aft_lower": [
+      72,
+      314,
+      336
+    ]
+  },
+  "extraction_script_sha256": "fb14b3f382807979091dfbacd7a83ffb83bd75c2d64a1454f4c4156eeebdaf44",
+  "files_sha256": {
+    "experiment_aft_lower.csv": "a150c162b53d981d18c7f90dff1feae643c590ee1db632b9a511c6a0121bb77b",
+    "experiment_aft_upper.csv": "3eeeb70389417dda4b2d665deff4468cf019b3183ede9078de6c6140d094abd3",
+    "experiment_fore_lower.csv": "53e146af91b664ddefd084f86a2533911cff19fff81acf43ca1aa04081456d99",
+    "experiment_fore_upper.csv": "3606fe8895e3be34e922412134808042822c5d3f1ad1143964d016864f799da6",
+    "mses_aft_lower.csv": "9e5c688e655fb0a1cbe587720df2dc1b42bad7798c4bd70e3ab3ce6929f01325",
+    "mses_aft_upper.csv": "2e883614cb5436747085ee6b58ed595a741b29979c86f2c5ec5db83720cb8397",
+    "mses_fore_lower.csv": "a15f7d55247a3f5d2ef530e89fc46b818731636c95d106644abe22ed56d36188",
+    "mses_fore_upper.csv": "bf9f2f37216309d3033a95c15ddca20d4a211ad594fd5592593c7b02ee8dabb2"
+  }
+}

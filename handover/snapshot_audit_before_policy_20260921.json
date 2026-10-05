@@ -1,0 +1,24 @@
+{
+  "status": "failed",
+  "checked_files": 11053,
+  "checked_bytes": 241261531,
+  "failures": [
+    {
+      "path": "AGENTS.md",
+      "reason": "Content changed"
+    },
+    {
+      "path": "CODEX_HANDOVER.md",
+      "reason": "Content changed"
+    },
+    {
+      "path": "DEVELOPMENT_PLAN.md",
+      "reason": "Content changed"
+    },
+    {
+      "path": "handover/status.json",
+      "reason": "Content changed"
+    }
+  ],
+  "scope": "Snapshot integrity, not aerodynamic validation"
+}

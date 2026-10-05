@@ -1,0 +1,7 @@
+# Environment used to assemble/verify the 2026-09-14 handover, Python 3.12.14.
+# requirements.txt retains the supported core version ranges.
+numpy==2.3.5
+scipy==1.17.0
+matplotlib==3.10.8
+# Optional for re-extracting/auditing source PDFs; not needed by the flow solver.
+PyMuPDF==1.26.6

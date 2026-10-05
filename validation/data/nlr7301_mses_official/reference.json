@@ -1,0 +1,19 @@
+{
+  "source_url": "https://web.mit.edu/drela/Public/web/mses/nlf26.pdf",
+  "source_pdf_sha256": "f48bbca293a20d2b75930b61be060e4ce9a0d5b85143bcf0c9b548fea161f8e3",
+  "source_page_index": 0,
+  "method": "Manual transcription of printed coefficients; visually checked against page 1",
+  "solver": "MSES",
+  "version": "3.11",
+  "reynolds": 2510000,
+  "mach": 0.185,
+  "ncrit": 9,
+  "alpha_deg": 6.0,
+  "CL": 2.484,
+  "CD": 0.02264,
+  "CM": -0.4913,
+  "geometry_status": "Nominal NLR7301 gap 2.60%; title has an additional configuration suffix. Exact coordinates and interpretation of suffix not supplied by public example.",
+  "scored": false,
+  "qualification": "Printed precision is not physical or numerical uncertainty. No independent MSES run; no matching input deck. CM reference not established.",
+  "archive_comparison": "Use archived nlr7301_mses result at exact alpha 6 degrees; no interpolation."
+}

@@ -1,0 +1,93 @@
+{"phase": "verifying_payload", "exit_code": 0, "launcher_pid": 11453, "hostname": "jony4", "updated_utc": "2026-09-16T12:35:54.085008+00:00"}
+Verified payload files: 87
+{"phase": "installing_python", "exit_code": 0, "launcher_pid": 11453, "hostname": "jony4", "updated_utc": "2026-09-16T12:35:54.135081+00:00"}
+error: No download found for request: cpython-3.12.14-linux-x86_64-gnu
+{"phase": "failed", "exit_code": 2, "launcher_pid": 11453, "hostname": "jony4", "updated_utc": "2026-09-16T12:35:54.231486+00:00"}
+{"phase": "verifying_payload", "exit_code": 0, "launcher_pid": 14949, "hostname": "jony4", "updated_utc": "2026-09-16T12:38:08.027600+00:00"}
+Verified payload files: 87
+{"phase": "installing_python", "exit_code": 0, "launcher_pid": 14949, "hostname": "jony4", "updated_utc": "2026-09-16T12:38:08.078173+00:00"}
+Downloading cpython-3.12.13-linux-x86_64-gnu (download) (32.6MiB)
+ Downloaded cpython-3.12.13-linux-x86_64-gnu (download)
+Installed Python 3.12.13 in 7.03s
+ + cpython-3.12.13-linux-x86_64-gnu
+Using CPython 3.12.13
+Creating virtual environment at: .venv
+Activate with: source .venv/bin/activate
+{"phase": "installing_dependencies", "exit_code": 0, "launcher_pid": 14949, "hostname": "jony4", "updated_utc": "2026-09-16T12:38:15.293002+00:00"}
+Resolved 13 packages in 1.25s
+Downloading pillow (6.6MiB)
+Downloading pymupdf (23.0MiB)
+Downloading scipy (33.4MiB)
+Downloading numpy (15.8MiB)
+Downloading matplotlib (8.3MiB)
+Downloading kiwisolver (1.4MiB)
+Downloading fonttools (5.2MiB)
+ Downloaded kiwisolver
+ Downloaded fonttools
+ Downloaded pillow
+ Downloaded matplotlib
+ Downloaded numpy
+ Downloaded pymupdf
+ Downloaded scipy
+Prepared 13 packages in 19.42s
+Installed 13 packages in 40ms
+ + contourpy==1.4.0
+ + cycler==0.12.1
+ + fonttools==4.65.0
+ + kiwisolver==1.5.1
+ + matplotlib==3.10.8
+ + numpy==2.3.5
+ + packaging==26.3
+ + pillow==12.3.0
+ + pymupdf==1.26.6
+ + pyparsing==3.3.2
+ + python-dateutil==2.9.0.post0
+ + scipy==1.17.0
+ + six==1.17.0
+{"phase": "preflight_tests", "exit_code": 0, "launcher_pid": 14949, "hostname": "jony4", "updated_utc": "2026-09-16T12:38:36.176322+00:00"}
+test_matrix_has_all_six_conditions_on_three_paths_and_one_warm_control (test_s702_repeatability.RepeatabilityTests.test_matrix_has_all_six_conditions_on_three_paths_and_one_warm_control) ... ok
+test_original_failed_targets_seed_from_computed_lift (test_s702_repeatability.RepeatabilityTests.test_original_failed_targets_seed_from_computed_lift) ... ok
+test_prepare_rejects_changed_manifest_and_nonempty_unmanifested_output (test_s702_repeatability.RepeatabilityTests.test_prepare_rejects_changed_manifest_and_nonempty_unmanifested_output) ... ok
+test_warm_control_preserves_original_prefix_and_default_start (test_s702_repeatability.RepeatabilityTests.test_warm_control_preserves_original_prefix_and_default_start) ... ok
+test_worker_passes_target_order_without_duplicate_output_keyword (test_s702_repeatability.RepeatabilityTests.test_worker_passes_target_order_without_duplicate_output_keyword) ... ok
+test_budget_and_input (test_optimization.FixedLiftTests.test_budget_and_input) ... ok
+test_camber_keeps_thickness_and_endpoints (test_optimization.FixedLiftTests.test_camber_keeps_thickness_and_endpoints) ... ok
+test_clearance_uses_segments (test_optimization.FixedLiftTests.test_clearance_uses_segments) ... ok
+test_failed_flow_cannot_be_an_objective (test_optimization.FixedLiftTests.test_failed_flow_cannot_be_an_objective) ... ok
+test_no_extrapolation (test_optimization.FixedLiftTests.test_no_extrapolation) ... ok
+test_nonlinear_target_and_callback (test_optimization.FixedLiftTests.test_nonlinear_target_and_callback) ... ok
+test_supersonic_cannot_be_an_objective (test_optimization.FixedLiftTests.test_supersonic_cannot_be_an_objective) ... ok
+test_drag_markers_match_independent_lift_curve (test_s702_sweep.HoldoutExtractionTests.test_drag_markers_match_independent_lift_curve) ... ok
+test_pinned_source_and_export_hashes (test_s702_sweep.HoldoutExtractionTests.test_pinned_source_and_export_hashes) ... ok
+test_absolute_relative_errors_cannot_cancel (test_s702_sweep.SweepMetricsTests.test_absolute_relative_errors_cannot_cancel) ... ok
+test_duplicate_case_is_not_extra_weight (test_s702_sweep.SweepMetricsTests.test_duplicate_case_is_not_extra_weight) ... ok
+test_heldout_error_does_not_choose_its_own_parameter (test_s702_sweep.SweepMetricsTests.test_heldout_error_does_not_choose_its_own_parameter) ... ok
+test_local_retry_uses_model_lift_and_rejects_reversed_branch (test_s702_sweep.SweepMetricsTests.test_local_retry_uses_model_lift_and_rejects_reversed_branch) ... ok
+test_missing_difficult_case_cannot_win (test_s702_sweep.SweepMetricsTests.test_missing_difficult_case_cannot_win) ... ok
+test_drag_markers_correspond_to_lift_measurement_sequence (test_s702.S702DataTests.test_drag_markers_correspond_to_lift_measurement_sequence) ... ok
+test_hinge_and_deflection_preserve_upstream_elements (test_s702.S702DataTests.test_hinge_and_deflection_preserve_upstream_elements) ... ok
+test_reference_calibration_matches_printed_maximum_lift (test_s702.S702DataTests.test_reference_calibration_matches_printed_maximum_lift) ... ok
+test_aft_upper_markers_match_subset_of_printed_taps (test_s702_pressure.S702PressureDataTests.test_aft_upper_markers_match_subset_of_printed_taps) ... ok
+test_caption_and_pressure_provenance (test_s702_pressure.S702PressureDataTests.test_caption_and_pressure_provenance) ... ok
+test_fore_upper_taps_match_table_ii (test_s702_pressure.S702PressureDataTests.test_fore_upper_taps_match_table_ii) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.075s
+
+OK
+{"status": "prepared", "jobs": 11, "targets": 19, "out": "/home/jony/multifoil-runs/s702-repeatability-20260916/validation/results/s702_repeatability_20260915"}
+{"phase": "running_study", "exit_code": 0, "launcher_pid": 14949, "hostname": "jony4", "updated_utc": "2026-09-16T12:38:38.922778+00:00"}
+{"event": "started", "started_utc": "2026-09-16T12:38:39.434198+00:00", "workers": 8, "pending_jobs": 11, "archived_interruptions": []}
+{"event": "job_completed", "job": "cold_d5_cl0p5", "complete_success": true, "wall_seconds": 66.19289070500236}
+{"event": "job_completed", "job": "cold_d5_cl1p2", "complete_success": true, "wall_seconds": 82.7384648189909}
+{"event": "job_completed", "job": "cold_d10_cl1p2", "complete_success": true, "wall_seconds": 90.04396785200515}
+{"event": "job_completed", "job": "cold_d5_cl0p8", "complete_success": true, "wall_seconds": 111.4526745690091}
+{"event": "job_completed", "job": "cold_d10_cl0p5", "complete_success": true, "wall_seconds": 167.24333763399045}
+{"event": "job_completed", "job": "warm_replay_d10_cl0p8", "complete_success": true, "wall_seconds": 121.75484961199982}
+{"event": "job_completed", "job": "increasing_d5", "complete_success": true, "wall_seconds": 264.8640463910124}
+{"event": "job_completed", "job": "decreasing_d5", "complete_success": true, "wall_seconds": 323.3380868230015}
+{"event": "job_completed", "job": "increasing_d10", "complete_success": true, "wall_seconds": 396.79950441099936}
+{"event": "job_completed", "job": "decreasing_d10", "complete_success": true, "wall_seconds": 391.6771645609988}
+{"event": "job_completed", "job": "cold_d10_cl0p8", "complete_success": false, "wall_seconds": 600.932238384994}
+{"completed_utc": "2026-09-16T12:48:40.413416+00:00", "required_targets": 19, "converged_targets": 18, "first_attempt_successes": 18, "path_spans": [{"flap": 5, "target_cl": 0.5, "required": 3, "converged": 3, "complete": true, "all_first_attempts": true, "CD_span_counts": 1.9081958235744878e-13}, {"flap": 5, "target_cl": 0.8, "required": 3, "converged": 3, "complete": true, "all_first_attempts": true, "CD_span_counts": 2.0468002293050347e-09}, {"flap": 5, "target_cl": 1.2, "required": 3, "converged": 3, "complete": true, "all_first_attempts": true, "CD_span_counts": 2.768403561947963e-07}, {"flap": 10, "target_cl": 0.5, "required": 3, "converged": 3, "complete": true, "all_first_attempts": true, "CD_span_counts": 5.899794541797121e-11}, {"flap": 10, "target_cl": 0.8, "required": 3, "converged": 2, "complete": false, "all_first_attempts": false, "CD_span_counts": null}, {"flap": 10, "target_cl": 1.2, "required": 3, "converged": 3, "complete": true, "all_first_attempts": true, "CD_span_counts": 3.6082248300317588e-12}], "requested_evaluations": 68, "failed_requested_evaluations": 3, "summed_target_wall_seconds": 2616.917970531009, "qualification": "Numerical path dependence only; separate first-attempt and fallback success; full state/plot audit still required"}
+{"phase": "finished_with_numerical_failures", "exit_code": 2, "launcher_pid": 14949, "hostname": "jony4", "updated_utc": "2026-09-16T12:48:40.551396+00:00"}
